@@ -164,7 +164,7 @@
 
 
 --44. Write an SQL query to find the number of students in each major 
---who have a GPA greater than 7.5
+--who have a GPA greater than 3.5
 
 
 --45. Write an SQL query to find the students who have the same 
