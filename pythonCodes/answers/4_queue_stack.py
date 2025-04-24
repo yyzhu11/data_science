@@ -1,6 +1,20 @@
 #######################################################################################
 #stack,definition
+class myStack():
+    def __init__(self):
+        self.stack = []
 
+    def push(self, item):
+        self.stack.append(item)
+
+    def top(self):
+        return self.stack[-1]
+
+    def pop(self):
+        return self.stack.pop()
+
+    def size(self):
+        return len(self.stack)
 
 #######################################################################################
 #Leetcode 1381-Design a Stack With Increment Operation
@@ -23,7 +37,31 @@ Output:
 
 [null,null,null,2,null,null,null,null,null,103,202,201,-1]
 """
+class CustomStack():
+    def __init__(self, maxSize):
+        self.maxSize = maxSize
+        self.stack = []
 
+    def push(self, item):
+        if self.size() < self.maxSize:
+            self.stack.append(item)
+
+    def top(self):
+        return self.stack[-1]
+
+    def pop(self):
+        if self.size() > 0:
+            return self.stack.pop()
+        else:
+            return -1
+
+    def size(self):
+        return len(self.stack)
+
+    def increment(self, k, val):
+        n = min(self.size(), k)
+        for i in range(n):
+            self.stack[i] += val
 
 # customStack = CustomStack(3);
 # customStack.push(1);
@@ -46,7 +84,25 @@ Output:
 
 ########################################################################################################
 #Queue definition
+class myQueue():
+    def __init__(self):
+        self.queue = []
 
+    def size(self):
+        return len(self.queue)
+
+    def push(self, item):
+        self.queue.append(0, item)
+
+    def pop(self):
+        if self.size() > 0:
+            return self.queue.pop()
+        else:
+            return -1
+
+from collections import deque
+
+myQueue = deque()
 
 ########################################################################################################
 #Leetcode 1047- Remove All Adjacent Duplicates In String
@@ -64,6 +120,18 @@ Example:
 Input:"abbaca"
 Output:"ca"
 """
+def removeAllAdj(string):
+    stack = []
+    #slist = list(string)
+    for i in range(len(string)):
+        if len(stack) == 0:
+            stack.append(string[i])
+        elif len(stack) > 0 and string[i] != stack[-1]:
+            stack.append(string[i])
+        elif len(stack) > 0 and string[i] == stack[-1]:
+            stack.pop()
+    #print(stack)
+    return ''.join(stack)
 
 
 #print(removeAllAdj("abbaca"))
@@ -98,7 +166,26 @@ Example5:
 Input: "{ [ ] }" Output: true
 
 """
+def validParentheses(string):
+    myDict = {'(':')', '[':']', '{':'}'}
+    stack = []
+    if not string:
+        return True
+    for e in string:
+        if e in myDict.keys():
+            if stack:
+                return False
+            else:
+                stack.append(e)
+        else:
+            if not stack:
+                return False
+            elif e == myDict[stack[-1]]:
+                stack.pop()
+            elif e != myDict[stack[-1]]:
+                return False
 
+    return not len(stack)
 
 # print(validParentheses("()"))
 # print(validParentheses("( ) [ ] { }"))
@@ -125,7 +212,35 @@ Output:
 
 [null,null,null,null,-3,null,0,-2]
 """
+import math
+class minStack():
+    def __init__(self):
+        self.minVal = None
+        self.stack = []
 
+    def push(self, item):
+        self.stack.append(item)
+        self.minVal = min(self.stack)
+
+    def pop(self):
+        if len(self.stack) > 0:
+            item = self.stack.pop()
+            if self.stack:
+                self.minVal = min(self.stack)
+            else:
+                self.minVal = None
+            return item
+        else:
+            return -1
+
+    def top(self):
+        if len(self.stack) > 0:
+            return self.stack[-1]
+        else:
+            return None
+
+    def getMin(self):
+        return self.minVal
 
 
 ########################################################################################################
@@ -139,7 +254,29 @@ pop() -- Removes the element on top of the stack.
 top() -- Get the top element.
 empty() -- Return whether the stack is empty.
 """
+from collections import deque
+class stackUsingQueue():
+    def __init__(self):
+        self.queue = deque()
 
+    def push(self, item):
+        self.queue.append(item)
+
+    def pop(self):
+        if self.empty():
+            return
+        self.queue.pop()
+
+    def top(self):
+        if self.empty():
+            return
+        return self.queue[-1]
+
+    def empty(self):
+        if len(self.queue) > 0:
+            return False
+        else:
+            return True
 
 ########################################################################################################
 #Leetcode 232-Implement Queue using Stacks
@@ -156,7 +293,27 @@ You must use only standard operations of a stack -- which means only push to top
 Depending on your language, stack may not be supported natively. You may simulate a stack by using a list or deque (double-ended queue), as long as you use only standard operations of a stack.
 You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
 """
+class queueUsingStack():
+    def __init__(self):
+        self.stack = []
 
+    def push(self, item):
+        self.stack.append(item)
+
+    def pop(self):
+        if self.empty():
+            return
+        item = self.stack[0]
+        del self.stack[0]
+        return item
+
+    def peek(self):
+        if self.empty():
+            return
+        return self.stack[0]
+
+    def empty(self):
+        return bool(not len(self.stack))
 
 
 ########################################################################################################
@@ -176,7 +333,51 @@ isEmpty(): Checks whether Deque is empty or not.
 isFull(): Checks whether Deque is full or not.
 
 """
+from collections import deque
+class MyCircularDeque():
+    def __init__(self, k):
+        self.size = k
+        self.queue = deque()
 
+    def insertFront(self, item):
+        if self.isFull():
+            return False
+        self.queue.appendleft(item)
+        return True
+
+    def insertLast(self, item):
+        if self.isFull():
+            return False
+        self.queue.append(item)
+        return True
+
+    def deleteFront(self):
+        if self.isEmpty():
+            return -1
+        self.queue.popleft()
+        return True
+
+    def deleteLast(self):
+        if self.isEmpty():
+            return -1
+        self.queue.pop()
+        return True
+
+    def getFront(self):
+        if self.isEmpty():
+            return -1
+        return self.queue[0]
+
+    def getRear(self):
+        if self.isEmpty():
+            return -1
+        return self.queue[-1]
+
+    def isEmpty(self):
+        return bool(not len(self.queue))
+
+    def isFull(self):
+        return len(self.queue) == self.size
 
 ########################################################################################################
 #Leetcode 682- Baseball Game
@@ -224,7 +425,29 @@ Round 6: You could get -4 + 9 = 5 points. The sum is 13.
 Round 7: You could get 9 + 5 = 14 points. The sum is 27.
 
 """
-
+def baseballGame(slist):
+    stack = []
+    sum = 0
+    for s in slist:
+        if s == 'C':
+            num = stack.pop()
+            sum -= num
+        elif s == 'D':
+            num = stack[-1] * 2
+            stack.append(num)
+            print(stack)
+            sum += num
+        elif s == '+':
+            print(stack)
+            print(sum)
+            num1 = stack[-1]
+            num2 = stack[-2]
+            stack.append(num1+num2)
+            sum += num1 + num2
+        else:
+            stack.append(int(s))
+            sum += int(s)
+    return sum
 
 #print(baseballGame(["5","2","C","D","+"]))
 #print(baseballGame(["5","-2","4","C","D","9","+","+"]))
@@ -269,7 +492,25 @@ Follow up:
 Can you solve it in O(N) time and O(1) space?
 """
 
-
+def backspaceStringCompare(str1, str2):
+    stack1 = []
+    stack2 = []
+    for s in str1:
+        if s =='#':
+            if stack1:
+                stack1.pop()
+        else:
+            stack1.append(s)
+    for s in str2:
+        if s =='#':
+            if stack2:
+                stack2.pop()
+        else:
+            stack2.append(s)
+    if stack1 == stack2:
+        return True
+    else:
+        return False
 
 
 # print(backspaceStringCompare("ab#c", "ad#c"))
@@ -303,7 +544,17 @@ Input: inputs = ["RecentCounter","ping","ping","ping","ping"], inputs = [[],[1],
 
 Output: [null,1,2,3,3]
 """
+from collections import deque
 
+class RecentCounter():
+    def __init__(self):
+        self.queue = deque()
+
+    def ping(self, t):
+        while len(self.queue) > 0 and self.queue[0] < (t-3000):
+            self.queue.popleft()
+        self.queue.append(t)
+        return len(self.queue)
 
 
 # counter = RecentCounter()
@@ -361,7 +612,22 @@ Constraints:
 target is strictly increasing.
 
 """
+from collections import deque
+def stackOperation(nlist, n):
+    queue = deque(list(range(1,n+1)))
+    target = deque(nlist)
+    result = []
+    while queue and target:
+        if queue[0] != target[0]:
+            queue.popleft()
+            result.append("push")
+            result.append("pop")
+        else:
+            queue.popleft()
+            target.popleft()
+            result.append("push")
 
+    return result
 
 
 # print(stackOperation([1,2,3],3))
@@ -403,7 +669,14 @@ For number 4 in the first array, there is no next greater number for it in the s
 
 """
 
-
+def nextGreaterElement(num1, num2):
+    stack = []
+    myDict = {}
+    for num in num2:
+        while stack and stack[-1] < num:
+            myDict[stack.pop()] = num
+        stack.append(num)
+    return [myDict.get(num, -1) for num in num1]
 
 #print(nextGreaterElement([4,1,2],[1,3,4,2] ))
 #print(nextGreaterElement([2,4],[1,2,3,4] ))

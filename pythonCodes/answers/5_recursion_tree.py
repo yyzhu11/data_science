@@ -20,17 +20,43 @@ Input: n = 25
 Output: 1389537
 
 """
-
+def tribonacci(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    elif n == 2:
+        return 1
+    return tribonacci(n-1) + tribonacci(n-2) + tribonacci(n-3)
 
 #print(tribonacci(25))
 
-
+def tribonacci2(n):
+    T0 = 0
+    T1 = 1
+    T2 = 1
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    elif n == 2:
+        return 1
+    for i in range(3, n+1):
+        T3 = T0 + T1 + T2
+        T0 = T1
+        T1 = T2
+        T2 = T3
+    return T3
 
 #print(tribonacci2(25))
 ########################################################################################################
 #Tree
 
-
+class treeNode():
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.right = right
+        self.left = left
 
 ########################################################################################################
 #Leetcode104 - Maximum Depth of Binary Tree
@@ -53,12 +79,42 @@ Given binary tree [3,9,20,null,null,15,7],
 15   7
 return its depth = 3.
 """
+from collections import deque
+def constructBT(nlist, i):
+    n = len(nlist)
+    if i>= n or nlist[i] == None:
+        return None
+    root = treeNode(nlist[i])
+    if (2*i + 1) < n:
+        root.left = constructBT(nlist, 2*i + 1)
+    if (2*i + 2)< n:
+        root.right = constructBT(nlist, 2*i + 2)
+    return root
+
+def printBT(root):
+    result = []
+    queue = deque()
+    if root:
+        queue.append(root)
+        while len(queue) > 0 and queue.count(None) != len(queue):
+            node = queue.popleft()
+            if node:
+                result.append(node.val)
+                queue.append(node.left)
+                queue.append(node.right)
+            else:
+                result.append(None)
+
+    return result
 
 
 #root = constructBT([3,9,20,None,None,15,7],0)
 
 #print(printBT(root))
-
+def maxDepthBT(root):
+    if not root:
+        return 0
+    return max(maxDepthBT(root.right) +1, maxDepthBT(root.left) + 1)
 
 #print(maxDepthBT(root))
 
@@ -80,7 +136,20 @@ Input: a = "1010", b = "1011"
 
 Output: "10101"
 """
+def addBinary(a, b):
+    if not a:
+        return b
+    elif not b:
+        return a
 
+    if a[-1] == '0' and b[-1] == '0':
+        return addBinary(a[:-1],b[:-1]) + '0'
+    elif a[-1] == '1' and b[-1] == '0':
+        return addBinary(a[:-1],b[:-1]) + '1'
+    elif a[-1] == '0' and b[-1] == '1':
+        return addBinary(a[:-1],b[:-1]) + '1'
+    elif a[-1] == '1' and b[-1] == '1':
+        return addBinary(addBinary(a[:-1],b[:-1]),'1') + '0'
 
 
 #print(addBinary("1010", "1011"))
@@ -124,7 +193,14 @@ Input:
 Output: false
 
 """
-
+def sameTree(root1, root2):
+    if not root1 and not root2:
+        return True
+    elif not root1 and root2:
+        return False
+    elif root1 and not root2:
+        return False
+    return sameTree(root1.right, root2.right) and sameTree(root1.left, root2.left)
 
 
 ########################################################################################################
@@ -147,7 +223,14 @@ which represents the following height balanced BST:
 -10  5
 
 """
-
+def balancedBST(nlist):
+    if not nlist:
+        return None
+    mid = len(nlist) // 2
+    root = treeNode(nlist[mid])
+    root.left = balancedBST(nlist[0:mid])
+    root.right = balancedBST(nlist[mid+1:])
+    return root
 #root = balancedBST([-10,-3,0,5,9])
 #print(printBT(root))
 
@@ -167,7 +250,13 @@ Output: 3
 [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
 
 """
-
+def maxDepthNaryTree(root):
+    if not root:
+        return 0
+    result = 0
+    for child in root.children:
+        result = max(result, maxDepthNaryTree(child))
+    return 1 + result
 
 
 ########################################################################################################
@@ -185,6 +274,15 @@ Input: root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,1
 Output: [1,2,3,6,7,11,14,4,8,12,5,9,13,10]
 """
 
+def preorderNaryTree(root):
+    if not root:
+        return []
+    result = []
+    result.append(root.val)
+    for child in root.children:
+            result = result + preorderNaryTree(child)
+
+    return result
 
 
 
@@ -217,7 +315,18 @@ Merged tree:
 	  / \   \ 
 	 5   4   7
 """
+def mergeTree(root1, root2):
+    if not root1 and not root2:
+        return None
+    elif not root1 and root2:
+        return root2
+    elif root1 and not root2:
+        return root1
+    root = treeNode(root1.val + root2.val)
+    root.left = mergeTree(root1.left, root2.left)
+    root.right = mergeTree(root1.right, root2.right)
 
+    return root
 
 # root1 = constructBT([1,3,2,5],0)
 # root2 = constructBT([2,1,3,None,4,None,7],0)
@@ -265,7 +374,21 @@ Output:
   /
  1
 """
+def trimBT(root, L, R):
+    if not root:
+        return None
+    if root.val <= R and root.val >= L:
+        if root.left and root.left.val < L:
+            root.left = trimBT(root.left.right, L, R)
+        if root.right and root.right.val > R:
+            print(root.right.val)
+            root.right = trimBT(root.right.left, L, R)
+    elif root.val > R:
+        root = trimBT(root.left. L, R)
 
+    elif root.val < L:
+        root = trimBT(root.right, L, R)
+    return root
 
 #root = constructBT([1, 0, 2],0)
 #root1 = trimBT(root, 1, 2)
@@ -309,7 +432,15 @@ since there is no node with value 5, we should return NULL.
 Note that an empty tree is represented by NULL, 
 therefore you would see the expected output (serialized tree format) as [], not null.
 """
-
+def searchBT(root, target):
+    if not root:
+        return None
+    if root.val == target:
+        return root
+    elif root.val > target:
+        return searchBT(root.left, target)
+    else:
+        return searchBT(root.right, target)
 
 # root = constructBT([4,2,7,1,3], 0)
 # root1 = searchBT(root, 2)
@@ -334,7 +465,14 @@ Input: root = [10,5,15,3,7,13,18,1,null,6], L = 6, R = 10
 Output: 23
 """
 
-
+def rangeSumBT(root, L, R):
+    if not root:
+        return 0
+    sum = 0
+    if root.val >= L and root.val <= R:
+        sum += root.val
+    sum += rangeSumBT(root.right, L, R) + rangeSumBT(root.left, L, R)
+    return sum
 
 
 #root = constructBT([10,5,15,3,7,None,18],0)
@@ -363,6 +501,13 @@ Input: [2,2,2,5,2]
 
 Output: false
 """
+def univaluedBT(root):
+    if not root:
+        return True
+    if root.val == 1:
+        return univaluedBT(root.left) and univaluedBT(root.right)
+    else:
+        return False
 
 
 # root = constructBT([2,2,2,5,2],0)

@@ -17,7 +17,26 @@ Input: [1,3,5,6], 2 Output: 1
 
 """
 
+def insertPosition(nlist, target):
+    if not nlist:
+        return None
+    left = 0
+    right = len(nlist) - 1
+    while left <= right:
+        middle = left + (right - left)//2
+        if nlist[middle] == target:
+            return middle
+        elif nlist[middle] < target:
+            left = middle + 1
+        elif nlist[middle] > target:
+            right = middle -1
+    return left
 
+
+
+
+#print(insertPosition([1,3,5,6], 2))
+#print(insertPosition([1,3,5,6], 5))
 ##########################################################################################################################################
 #Leetcode 69-Sqrt(x)
 
@@ -36,8 +55,29 @@ Example2:
 Input: 8, Output: 2
 
 """
+def sqrt(x):
+    left = 1
+    if x > 4:
+        right = x//2
+    else:
+        right = x
 
+    while left <= right:
+        mid = left + (right - left)//2
+        if mid * mid == x:
+            return mid
+        elif mid * mid < x:
+            left = mid + 1
+        else:
+            right = mid - 1
+    if left * left < x:
+        return left
+    else:
+        return left - 1
 
+#print(sqrt(4))
+#print(sqrt(8))
+#print(sqrt(9))
 
 ##########################################################################################################################################
 #Leetcode167 - Two Sum II - Input array is sorted
@@ -58,6 +98,27 @@ Input: numbers = [2,7,11,15], target = 9, Output: [1,2]
 Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
 """
 
+def binarySearch(nlist,target):
+    left = 0
+    right = len(nlist) - 1
+    while left <= right:
+        mid = left + (right - left)//2
+        if nlist[mid] == target:
+            return mid
+        elif nlist[mid] > target:
+            right = mid - 1
+        else:
+            left = mid + 1
+    return None
+
+def findTwoSum(nlist, target):
+    for i in range(len(nlist)):
+        remain = target - nlist[i]
+        index = binarySearch(nlist[i:],remain)
+        if index is not None:
+            return [i+1, index+1]
+
+#print(findTwoSum([2,7,11,15],9))
 ##########################################################################################################################################
 #Leetcode 278-First Bad Version
 """
@@ -85,6 +146,31 @@ Then 4 is the first bad version.
 
 """
 
+
+def isBadVersion(target):
+    if target == 3:
+        return False
+    if target == 5:
+        return True
+    if target == 4:
+        return True
+
+
+def firstBadVersion(nlist):
+    left = 0
+    right = len(nlist) - 1
+    while left <= right:
+        mid = left + (right - left)//2
+        if isBadVersion(mid) and not isBadVersion(mid-1):
+            return mid
+        elif isBadVersion(mid):
+            right = mid - 1
+        else:
+            left = mid + 1
+    return left
+
+#print(firstBadVersion([1,2,3,4,5]))
+
 ##########################################################################################################################################
 #Leetcode 349-Intersection of Two Arrays
 """
@@ -102,6 +188,8 @@ Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4], Output: [9,4]
 """
 
 
+
+
 ##########################################################################################################################################
 #Leetcode 367-Valid Perfect Square
 """
@@ -117,6 +205,21 @@ Input: num = 16, Output: true
 Example2:
 Input: num = 14, Output: false
 """
+def isValidPerfectSquare(num):
+    left = 1
+    right = num//2
+    while left <= right:
+        mid = left + (right - left)//2
+        if mid * mid == num:
+            return True
+        elif mid * mid < num:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return False
+
+#print(isValidPerfectSquare(16))
+#print(isValidPerfectSquare(14))
 
 
 
@@ -174,23 +277,19 @@ Explanation: Because the 3rd row is incomplete, we return 2.
 """
 Description:
 You are climbing a stair case. It takes n steps to reach to the top.
-
 Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
 
 Example1:
 Input: 2
-
 Output: 2
 
 Explanation: There are two ways to climb to the top.
 
 1. 1 step + 1 step
-
 2. 2 steps
 
 Example2:
 Input: 3
-
 Output: 3
 
 Explanation: There are three ways to climb to the top.
@@ -262,7 +361,21 @@ Input: [0,1,0], Output: 1
 Example2:
 Input: [0,2,1,0], Output: 1
 """
+def peakInMountain(nlist):
+    left = 0
+    right = len(nlist) - 1
+    while left <= right:
+        mid = left + (right - left)//2
+        if nlist[mid] > nlist[mid - 1] and nlist[mid] > nlist[mid + 1]:
+            return mid
+        elif nlist[mid] > nlist[mid -1]:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return None
 
+#print(peakInMountain([0,1,0]))
+#print(peakInMountain([0,2,1,0]))
 
 
 ##########################################################################################################################################
@@ -282,11 +395,4 @@ Input: [1,3,4,2,2], Output: 2
 
 Example2:
 Input: [3,1,3,4,2], Output: 3
-"""
-
-#-------------------------------additional from other books---------------------------------------------------------------------------
-######################################################################################################################################
-#Leetcode 50 
-"""
-Implement pow(x, n), which calculates x raised to the power n (i.e., xn)
 """

@@ -1,3 +1,4 @@
+#########################################################################################
 #Leetcode169 - Majority Element
 """
 Description:
@@ -15,6 +16,10 @@ Output: 3
 Example2:
 Input: [2,2,1,1,1,2,2]Output: 2
 """
+def findMajority(nlist):
+    nlist.sort()
+    mid  = len(nlist) // 2
+    return nlist[mid]
 
 # print(findMajority([2,2,1,1,1,2,2]))
 # print(findMajority([3,2,3]))
@@ -34,6 +39,15 @@ Example:
 Input: [0,1,0,3,12], Output: [1,3,12,0,0]
 
 """
+def moveZeros(nlist):
+    current = 0
+    for i in range(0, len(nlist)):
+        if nlist[i] != 0:
+            nlist[i], nlist[current] = nlist[current], nlist[i]
+            current += 1
+    #print(nlist)
+    return nlist
+
 
 #print(moveZeroes([0,1,0,3,12]))
 
@@ -59,7 +73,15 @@ Your function should return length = 5, with the first five elements of nums bei
 
 It doesn't matter what values are set beyond the returned length.
 """
+def removeDup(nlist):
+    current = 0
 
+    for i in range(1, len(nlist)):
+        if nlist[i] != nlist[current]:
+            current += 1
+            nlist[current] = nlist[i]
+    print(nlist)
+    return current + 1
 
 #print(removeDup([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))
 
@@ -89,7 +111,41 @@ The substring with start index = 0 is "ab", which is an anagram of "ab".
 The substring with start index = 1 is "ba", which is an anagram of "ab".
 The substring with start index = 2 is "ab", which is an anagram of "ab".
 """
+from collections import Counter
 
+def findAllAnagrams(s, p):
+    #sliding window
+    pcounter = Counter(p)
+    result = []
+
+    for i in range(0, len(s)-len(p)+1):
+        start = i
+        end = start + len(p)
+        ccounter = Counter(s[start:end])
+        if ccounter == pcounter:
+            result.append(i)
+
+    return result
+
+def findAllAnagrams2(s, p):
+    pcounter = Counter(p)
+    result = []
+    start = 0
+    end = start + len(p)
+    oldCounter = Counter(s[start:end])
+    if pcounter == oldCounter:
+        result.append(0)
+    for i in range(1, len(s)-len(p)+1):
+        start = i
+        end = start + len(p) -1
+        print(start, end)
+        oldCounter[s[end]] = oldCounter.get(s[end],0) + 1
+        oldCounter[s[start-1]] -=1
+        if oldCounter[s[start-1]] == 0:
+            del oldCounter[s[start-1]]
+        if oldCounter == pcounter:
+            result.append(i)
+    return result
 
 #print(findAllAnagram("cbaebabacd","abc"))
 #print(findAllAnagram("abab","ab"))
@@ -120,7 +176,14 @@ Your function should return length = 5, with the first five elements of nums con
 Note that the order of those five elements can be arbitrary.It doesn’t matter what values are set beyond the returned length.
 
 """
-
+def removeVal(nlist, target):
+    current = 0
+    for i in range(0, len(nlist)):
+        if nlist[i] != target:
+            #swap current and i
+            nlist[i], nlist[current] = nlist[current], nlist[i]
+            current += 1
+    return current
 
 
 # print(removeVal([3,2,2,3],3))
@@ -145,7 +208,21 @@ Input: "race a car"
 Output: false
 
 """
-
+def isPalindrome(string):
+    start = 0
+    end = len(string) - 1
+    while start < end:
+        if (string[start].isnumeric() or string[start].isalpha()) and (string[end].isnumeric() or string[end].isalpha()):
+            if string[start].lower() == string[end].lower():
+                start += 1
+                end -= 1
+            else:
+                return False
+        elif not (string[start].isnumeric() or string[start].isalpha()):
+            start += 1
+        elif not (string[end].isnumeric() or string[end].isalpha()):
+            end -= 1
+    return True
 
 #print(isValidPalindrom("A man, a plan, a canal: Panama"))
 
@@ -167,7 +244,18 @@ Output: [1,2]
 
 Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
 """
+def addSum(nlist,target):
+    start = 0
+    end = len(nlist) -1
+    while start < end:
+        if (nlist[start] + nlist[end]) == target:
+            return [start+1, end+1]
+        elif (nlist[start] + nlist[end]) > target:
+            end -= 1
+        else:
+            start += 1
 
+    return None
 
 #print(twoSum([2,7,11,15],9))
 
@@ -192,7 +280,14 @@ Input: ["H","a","n","n","a","h"]
 Output: ["h","a","n","n","a","H"]
 
 """
-
+def reverseString(slist):
+    start = 0
+    end = len(slist) - 1
+    while start < end:
+        slist[end], slist[start] = slist[start], slist[end]
+        start += 1
+        end -= 1
+    return slist
 
 
 #print(reverseString(["H","a","n","n","a","h"]))
@@ -214,7 +309,29 @@ Example2:
 Input: "leetcode"
 Output: "leotcede"
 """
+def reverseVowels(str1):
+    string = list(str1)
+    start = 0
+    end = len(string) - 1
 
+    while start < end:
+
+        if (string[start].lower() == 'a' or string[start].lower() == 'e' or string[start].lower() == 'i' \
+            or string[start].lower() == 'o' or string[start].lower() == 'u') and \
+                (string[end].lower() == 'a' or string[end].lower() == 'e' or string[end].lower() == 'i' \
+                 or string[end].lower() == 'o' or string[end].lower() == 'u'):
+
+            string[start], string[end] = string[end], string[start]
+            start +=1
+            end -=1
+        elif not (string[start].lower() == 'a' or string[start].lower() == 'e' or string[start].lower() == 'i' \
+            or string[start].lower() == 'o' or string[start].lower() == 'u'):
+            start += 1
+        elif not  (string[end].lower() == 'a' or string[end].lower() == 'e' or string[end].lower() == 'i' \
+                 or string[end].lower() == 'o' or string[end].lower() == 'u'):
+            end -= 1
+    print(string)
+    return ''.join(str(i) for i in string)
 
 # print(reverseVowels("hello"))
 # print(reverseVowels("leetcode"))
@@ -239,6 +356,14 @@ Output: [2,4,3,1]
 
 The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted.
 """
+def sortByParity(nlist):
+    current = 0
+    for i in range(len(nlist)):
+        if nlist[i] % 2 == 0:
+            nlist[current], nlist[i] = nlist[i], nlist[current]
+            current += 1
+    return nlist
+
 
 #print(sortByParity([3,1,2,4]))
 
@@ -262,7 +387,17 @@ Output: [4,5,2,7]
 Explanation: [4,7,2,5], [2,5,4,7], [2,7,4,5] would also have been accepted.
 """
 
+def sortByParity2(nlist):
+    current = 0
+    for i in range(len(nlist)):
+        if i % 2 == 0 and nlist[i] % 2 == 1 and current % 2 == 1:
+            nlist[i],nlist[current] = nlist[current], nlist[i]
+            current += 1
+        elif i % 2 == 1 and nlist[i] % 2 == 0 and current % 2 == 0:
+            nlist[i], nlist[current] = nlist[current], nlist[i]
+            current += 1
 
+    return nlist
 
 
 #print(sortByParity2([4,2,5,7]))
@@ -288,7 +423,34 @@ Input: [-7,-3,2,3,11]
 
 Output: [4,9,9,49,121]
 """
+def squareSorted(nlist):
+    start = 0
+    end = len(nlist) -1
+    #print(start, end)
+    while end >= 0:
+        if (nlist[start]*nlist[start]) > (nlist[end] * nlist[end]):
+            #print(nlist)
+            nlist[start], nlist[end] = nlist[end], nlist[start]
+        end -= 1
+    for i in range(0, len(nlist)):
+        nlist[i] = nlist[i]*nlist[i]
+    return nlist
 
+
+def squareSorted2(nlist):
+    left = 0
+    right = len(nlist) - 1
+    answer = [0] * len(nlist)
+    while left <= right:
+        val_l, val_r = abs(nlist[left]), abs(nlist[right])
+        #print(val_l, val_r)
+        if val_l > val_r:
+            answer[right-left] = val_l * val_l
+            left += 1
+        else:
+            answer[right-left] = val_r * val_r
+            right -= 1
+    return answer
 
 # print(sortSqured([-4,-1,0,3,10]))
 #
@@ -321,7 +483,29 @@ Explanation: [0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1]
 Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.
 """
 
+def maxConsecutiveOnes(nlist, k):
+    useZero = 0
+    maxWindow = 0
+    start = 0
+    end = start
+    next = 0
 
+    while start < len(nlist) and end < len(nlist):
+        if nlist[end] == 1:
+            end += 1
+        else:
+            useZero += 1
+            if (useZero ==1):
+                next = end
+            if (useZero == (k+1)):
+                if maxWindow <(end - start):
+                    maxWindow = end - start
+                start = next + 1
+                useZero = 0
+                end = start
+            else:
+                end += 1
+    return  maxWindow
 
 #print(maxConsecutiveOnes([1,1,1,0,0,0,1,1,1,1,0], 2))
 

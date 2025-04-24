@@ -31,7 +31,16 @@ Each time you can either climb 1 or 2 steps.
 In how many distinct ways can you climb to the top?
 
 """
-
+def climbingStairs(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    dp_0 = 0
+    dp_1 = 1
+    for i in range(2, n):
+        dp_2 = dp_0 + dp_1
+        dp_1, dp_0 = dp_2, dp_1
 
 ########################################################################################################
 #Example: Climb Stairs with Min Cost
@@ -65,7 +74,15 @@ Output: 6
 Explanation:
 Cheapest is start on cost[0], and only step on 1s, skipping cost[3].
 """
-
+def minCostClimbingStairs(cost):
+    n = len(cost)
+    mincost = [0] * (n+1)
+    mincost[0] = 0
+    mincost[1] = 0
+    mincost[2] = min(cost[0], cost[1])
+    for i in range(3, n+1):
+        mincost[i] = min(mincost[i-2]+ cost[i-2], mincost[i-1] + cost[i-1])
+    return mincost[-1]
 
 #print(minCostClimbingStairs([10, 15, 20]))
 
@@ -98,7 +115,15 @@ Explanation:
 In this case, no transaction is done, i.e. max profit = 0.
 """
 
+def bestTimeStock(nlist):
+    n = len(nlist)
+    result = [0] * n
+    result[0] = 0
 
+    for i in range(1,n):
+        result[i] = max(result[i-1], nlist[i]- min(nlist[0:i]))
+
+    return result[-1]
 
 #print(bestTimeStock([7,1,5,3,6,4]))
 #print(bestTimeStock([7,6,4,3,1]))
@@ -122,6 +147,19 @@ If you have figured out the O(n) solution, try coding another solution using the
 which is more subtle.
 """
 
+def maxSubarray(nlist):
+    n = len(nlist)
+    result = [0] * n
+    start = 0
+    sumlist = [0] * n
+    sumlist[0] = nlist[0]
+    for i in range(1, n):
+        if (sumlist[i-1] + nlist[i]) < nlist[i]:
+            sumlist[i] = nlist[i]
+        else:
+            sumlist[i] = sumlist[i-1] + nlist[i]
+        result[i] = max(result[i-1], sumlist[i])
+    return result[-1]
 
 
 #print(maxSubarray([-2,1,-3,4,-1,2,1,-5,4]))
@@ -157,6 +195,24 @@ Constraints:
 1 <= m, n <= 100
 It’s guaranteed that the answer will be less than or equal to 2 * 10 ^ 9.
 """
+def uniquePaths(m, n):
+    result = [[0 for i in range(m)] for j in range(n)]
+    result[0][0] = 1
+    result[1][0] = 1
+    result[0][1] = 1
+
+    for i in range(0, n):
+        for j in range(0, m):
+            if i == 0 and j == 0:
+                result[i][j] = 1
+            elif i == 0 and j > 0:
+                result[i][j] = result[i][j-1]
+            elif j == 0 and i >0:
+                result[i][j] = result[i-1][j]
+            else:
+                result[i][j] = result[i][j-1] + result[i-1][j]
+    print(result)
+    return result[-1][-1]
 
 
 
@@ -186,6 +242,14 @@ Explanation:
 2. 1 step + 2 steps
 3. 2 steps + 1 step
 """
+def climbStairs(n):
+    result = [0] * (n)
+    result[0] = 1
+    result[1] = 2
+
+    for i in range(2, n):
+        result[i] = result[i-2] + result[i-1]
+    return result[-1]
 
 
 #print(climbStairs(3))
@@ -215,7 +279,13 @@ Output: 0
 Explanation:
 In this case, no transaction is done, i.e. max profit = 0. 
 """
+def bestTimeStock(nlist):
+    n = len(nlist)
+    result = [0] * n
+    for i in range(1, n):
+        result[i] = max(result[i-1], nlist[i] - min(nlist[0:i]))
 
+    return result[-1]
 
 #print(bestTimeStock([7,1,5,3,6,4]))
 
@@ -254,7 +324,17 @@ Output: 0
 Explanation:
 In this case, no transaction is done, i.e. max profit = 0.
 """
+def bestTimeStock2(prices):
+    n = len(prices)
+    result = [0] * n
+    buy = [0] * n
+    buy[0] = prices[0]
 
+    for i in range(1, n):
+        buy[i] = min(buy[i-1], prices[i] - result[i-1])
+        result[i] = max(result[i-1], prices[i]-buy[i])
+        print(result)
+    return result[-1]
 
 # print(bestTimeStock2([7,1,5,3,6,4]))
 # print(bestTimeStock2([1,2,3,4,5]))
@@ -294,7 +374,15 @@ Constraints:
 0 <= nums.length <= 100
 0 <= nums[i] <= 400
 """
-
+def houseRobber(nlist):
+    n = len(nlist)
+    result = [0] * n
+    result[0] = nlist[0]
+    result[1] = max (nlist[0], nlist[1])
+    for i in range(2, n):
+        result[i] = max(result[i-2] + nlist[i], result[i-1])
+        #print(result)
+    return result[-1]
 
 
 #print(houseRobber([1,2,3,1]))
@@ -330,7 +418,21 @@ Explanation:
 Rob house 1 (money = 1) and then rob house 3 (money = 3).
 Total amount you can rob = 1 + 3 = 4.
 """
+def houseRobber2(nlist):
+    if not nlist:
+        return 0
+    n = len(nlist)
+    result = [0] * n
+    result[0] = nlist[0]
+    result[1] = nlist[1]
 
+    for i in range(2, n):
+        if i == (n-1):
+            result[i] = max(result[i-2] + nlist[i] - result[0], result[i-1])
+        else:
+            result[i] = max(result[i-2]+nlist[i], result[i-1])
+
+    return result[-1]
 
 # print(houseRobber2([2,3,2]))
 # print(houseRobber2([1,2,3,1]))
@@ -356,7 +458,19 @@ Output: 3
 Explanation:
 transactions = [buy, sell, cooldown, buy, sell]
 """
-
+def bestTimeStockCooldown(price):
+    if not price:
+        return 0
+    n = len(price)
+    buy = [0] * n
+    buy[0] = 1
+    result = [0] * n
+    result[0] = 0
+    result[1] = max(result[0], price[1] - buy[0])
+    for i in range(2, n):
+        buy[i] = min(buy[i-1], price[i] - result[i-2])
+        result[i] = max(result[i-1], price[i] - buy[i-1])
+    return result[-1]
 
 #print(bestTimeStockCooldown([1,2,3,0,2]))
 
@@ -388,7 +502,21 @@ Buying at prices[4] = 4
 Selling at prices[5] = 9
 The total profit is ((8 - 1) - 2) + ((9 - 4) - 2) = 8.
 """
+def bestTimeStockFee(price, fee):
+    if not price:
+        return 0
+    n = len(price)
+    buy = [0] * n
+    result = [0] * n
+    buy[0] = price[0]
+    buy[1] = min(buy[0], price[1])
+    result[0] = 0
+    result[1] = max(result[0], price[1] - buy[0] - fee)
+    for i in range(2, n):
+        buy[i] = min(buy[i-1], price[i] - result[i-1])
+        result[i] = max(result[i-1], price[i] - buy[i-1] - fee)
 
+    return result[-1]
 
 #print(bestTimeStockFee([1, 3, 2, 8, 4, 9],2))
 
@@ -417,7 +545,18 @@ Output: 6
 Explanation:
 Cheapest is start on cost[0], and only step on 1s, skipping cost[3].
 """
-
+def mincostStairs(cost):
+    if not cost:
+        return 0
+    n = len(cost)
+    result = [0] * (n+1)
+    result[0] = 0
+    result[1] = min(result[0] + cost[0],0)
+    #print(result)
+    for i in range(2, n+1):
+        result[i] = min(result[i-2] + cost[i-2], result[i-1] + cost[i-1])
+        print(result)
+    return result[-1]
 
 #print(mincostStairs([10, 15, 20]))
 #print(mincostStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1]))
@@ -455,7 +594,15 @@ Constraints:
 1 <= nums.length <= 1000/li>
 -10^6 <= nums[i] <= 10^6
 """
-
+def sumArray(nlist):
+    if not nlist:
+        return []
+    n = len(nlist)
+    result = [0] * n
+    result[0] = nlist[0]
+    for i in range(1, n):
+        result[i] = result[i-1] + nlist[i]
+    return result
 
 #print(sumArray([3,1,2,10,1]))
 
@@ -498,7 +645,23 @@ Constraints:
 1 <= text2.length <= 1000
 The input strings consist of lowercase English characters only.
 """
-
+def maxSubString(str1, str2):
+    if not str1 and not str2:
+        return 0
+    if not str1 and str2:
+        return 0
+    if str1 and not str2:
+        return 0
+    m = len(str1) + 1
+    n = len(str2) + 1
+    result = [[0 for i in range(m)] for j in range(n)]
+    for i in range(1, n):
+        for j in range(1, m):
+            if str1[j-1] == str2[i-1]:
+                result[i][j] = result[i-1][j-1] + 1
+            else:
+                result[i][j] = max(result[i-1][j], result[i][j-1])
+    return result[-1][-1]
 
 
 #print(maxSubString("abcde", "ace"))
@@ -528,6 +691,17 @@ Input: nums = word1 = "leetcode", word2 = "etco"
 Output: 4
 
 """
+def deleteOpStrings(str1, str2):
+    m = len(str1) + 1
+    n = len(str2) + 1
+    result = [ [0 for i in range(m)] for j in range(n)]
+    for i in range(1, n):
+        for j in range(1, m):
+            if str1[j-1] == str2[i-1]:
+                result[i][j] = result[i-1][j-1] + 1
+            else:
+                result[i][j] = max(result[i-1][j], result[i][j-1])
+    return max(m-1,n-1) - result[-1][-1]
 
 
 #print(deleteOpStrings("leetcode","etco"))
