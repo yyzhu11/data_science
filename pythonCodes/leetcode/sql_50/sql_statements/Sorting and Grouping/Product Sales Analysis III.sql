@@ -1,3 +1,9 @@
+select t.product_id, t.first_year, s.quantity, s.price from  
+
+(select product_id, min(year) as first_year from Sales group by product_id) t left join 
+
+Sales s on  t.product_id = s.product_id and t.first_year = s.year 
+
 create table Sales (
 	sale_id	int,
 	product_id	int,
@@ -14,8 +20,8 @@ values
 (7,	200,	2011,	15,	9000);
 
 
-select t.product_id, t.first_year, s.quantity, s.price from  
+select t1.product_id, t1.first_year, t2.quantity, t2.price from  
 
-(select product_id, min(year) as first_year from Sales group by product_id) t left join 
 
-Sales s on  t.product_id = s.product_id and t.first_year = s.year 
+(select min(year) as first_year, product_id from Sales group by product_id) t1 
+left join Sales t2 on t1.product_id = t2.product_id and t1.first_year = t2.year

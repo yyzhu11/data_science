@@ -1,3 +1,9 @@
+select round(sum(if_immediate)*1.0/count(distinct customer_id),2) from 
+
+(select customer_id, (case when min(order_date)=min(customer_pref_delivery_date) then 1 else 0 end) as if_immediate  
+from Delivery group by customer_id) t
+
+
 create table Delivery (
 	delivery_id  int, 
 	customer_id int,     
@@ -15,9 +21,12 @@ values
 (6 ,  2  ,  '2019-08-11',  '2019-08-13'),
 (7 ,  4 ,  '2019-08-09',  '2019-08-09');   
 
-select round(sum(if_immediate)*1.0/count(distinct customer_id),2) from 
 
-(select customer_id, (case when min(order_date)=min(customer_pref_delivery_date) then 1 else 0 end) as if_immediate  
-from Delivery group by customer_id) t
+select sum(if_immediate)*100.0/count(*) as immediate_percentage from (
+select  (case when first_order_date = t2.customer_pref_delivery_date then 1 else 0 end) as if_immediate from 
+
+(select customer_id, min(order_date) as first_order_date from Delivery group by customer_id) t1 left join Delivery t2 
+on t1.customer_id = t2.customer_id and t1.first_order_date = t2.order_date) t3 
+
 
 
