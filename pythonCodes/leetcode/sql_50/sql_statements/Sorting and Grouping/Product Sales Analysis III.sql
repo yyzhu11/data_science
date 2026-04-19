@@ -25,3 +25,5 @@ select t1.product_id, t1.first_year, t2.quantity, t2.price from
 
 (select min(year) as first_year, product_id from Sales group by product_id) t1 
 left join Sales t2 on t1.product_id = t2.product_id and t1.first_year = t2.year
+
+

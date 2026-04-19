@@ -30,3 +30,10 @@ VALUES
 (210, 2),
 (207, 2),
 (210, 7);
+
+
+select contest_id, round (count(distinct user_id)*1.0/(select count(user_id) from Users) *100, 2) from Register  group by contest_id
+
+
+select contest_id, round(count(distinct user_id) *100.0/(select count(*) from Users), 2) as percentage from Register group by contest_id 
+order by percentage desc, contest_id 

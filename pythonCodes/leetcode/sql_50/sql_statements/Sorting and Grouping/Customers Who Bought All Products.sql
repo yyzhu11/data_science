@@ -1,3 +1,11 @@
+select distinct customer_id 
+
+from 
+
+(select customer_id, count(distinct product_key) as num_product from Customer group by customer_id ) t1
+
+where t1.num_product = (select count(distinct product_key) from Product)
+
 create table Customer (
 	customer_id  int, 
 	product_key  int,
@@ -21,12 +29,7 @@ values
 (3,  6 ),
 (1,  6 );
 
-select distinct customer_id 
-
-from 
-
-(select customer_id, count(distinct product_key) as num_product from Customer group by customer_id ) t1
-
-where t1.num_product = (select count(distinct product_key) from Product)
 
 
+select  customer_id from Customer group by customer_id
+having count(distinct product_key) = (select count(distinct product_key) from Product)

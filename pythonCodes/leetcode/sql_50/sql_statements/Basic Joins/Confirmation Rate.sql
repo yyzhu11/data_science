@@ -35,6 +35,7 @@ else sum(case when c.action = 'confirmed' then 1 else 0 end)*1.0/count(*) end), 
 
 from Signups s left join Confirmations c on s.user_id = c.user_id group by s.user_id order by s.user_id
 
+-----------------------------------------------------------------------
 
 SELECT s.user_id,
        ROUND(ISNULL(AVG(case when c.action = 'confirmed' then 1.0 else 0 end), 0), 2) AS confirmation_rate

@@ -1,3 +1,8 @@
+select employee_id from Employee5 where employee_id not in
+
+(select e1.employee_id from Employee5 e1 join Employee5 e2 
+on e1.manager_id = e2.employee_id where e2.employee_id is not null) and manager_id is not null
+
 create table Employee5 (
 
 	employee_id	int,
@@ -16,7 +21,5 @@ values
 (11, 'Joziah',	6,	28485);
 
 
-select employee_id from Employee5 where employee_id not in
-
-(select e1.employee_id from Employee5 e1 join Employee5 e2 
-on e1.manager_id = e2.employee_id where e2.employee_id is not null) and manager_id is not null
+select e1.employee_id from Employee5 e1 left join Employee5 e2 on e1.manager_id = e2.employee_id where e1.manager_id is not null 
+and e1.salary < 30000 and e2.employee_id is null order by employee_id
