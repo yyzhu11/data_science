@@ -1,0 +1,282 @@
+index
+
+0. Sort
+
+Leetcode 88. Merge Sorted Array
+Leetcode 41. First Missing Positive (Hard)
+
+1. Basic
+
+Leetcode 136. Single Number
+Leetcode 137. Single Number II (Medium)
+Leetcode 169. Majority Element
+Leetcode 217. Contains Duplicate
+Leetcode 1. Two Sum
+Leetcode 167. Two Sum II - Input array is sorted (Medium)
+Leetcode 219. Contains Duplicate II
+Leetcode 242. Valid Anagram
+Leetcode 268. Missing Number
+Leetcode 349. Intersection of Two Arrays
+Leetcode 350. Intersection of Two Arrays II
+Leetcode 389. Find the Difference
+Leetcode 442. Find All Duplicates in an Array (Medium)
+Leetcode 448. Find All Numbers Disappeared in an Array
+Leetcode 575. Distribute Candies
+Leetcode 28. Implement strstr(), Find the Index of the First Occurrence in a String 
+Leetcode 151. Reverse Words in a String (Medium)
+Leetcode 186. Reverse Words in a String II (Medium)
+Leetcode 161. One Edit Distance (Medium)
+Leetcode 8. String to Integer (atoi) (Medium)
+Leetcode 5. Longest Palindromic Substring (Medium)
+Leetcode 163. Missing Ranges (Medium)
+Leetcode 128. Longest Consecutive Sequence (Medium)
+Leetcode 3. Longest Substring Without Repeating Characters (Medium)
+Leetcode 159. Longest Substring with At Most Two Distinct Characters (Medium)
+Leetcode 65. Valid Number (Hard)
+
+2.Binary Search
+Leetcode 35. Search Insert Position
+Leetcode 153. Find Minimum in Rotated Sorted Array (Medium)
+Leetcode 154. Find Minimum in Rotated Sorted Array II (Hard)
+Leetcode 69. Sqrt(x)
+Leetcode 167. Two Sum II - Input array is sorted
+Leetcode 278. First Bad Version
+Leetcode 349. Intersection of Two Arrays
+Leetcode 350. Intersection of Two Arrays II
+Leetcode 367. Valid Perfect Square
+Leetcode 374. Guess Number Higher or Lower
+Leetcode 441. Arranging Coins
+Leetcode 744. Find Smallest Letter Greater Than Target
+Leetcode 33. Search in Rotated Sorted Array (Medium)
+Leetcode 81. Search in Rotated Sorted Array II (Medium)
+Leetcode 852. Peak Index in a Mountain Array (Medium)
+Leetcode 287. Find the Duplicate Number (Medium)
+Leetcode 50. Pow(x, n) (Medium)
+
+3. two pointers
+Leetcode 26. Remove Duplicates from Sorted Array,
+Leetcode 80. Remove Duplicates from Sorted Array II (Medium),
+Leetcode 283. Move Zeroes,
+Leetcode 905. Sort Array By Parity,
+Leetcode 922. Sort Array By Parity II,
+Leetcode 27. Remove Element,
+Leetcode 19. Remove Nth Node From End of List (Medium),
+Leetcode 509. Fibonacci Number,
+Leetcode 198. House Robber (Medium),
+Leetcode 125. Valid Palindrome,
+Leetcode 167. Two Sum II - Input array is sorted,
+Leetcode 344. Reverse String,
+Leetcode 345. Reverse Vowels of a String,
+Leetcode 977. Squares of a Sorted Array,
+Leetcode 11. Container With Most Water (Medium),
+Leetcode 88. Merge Sorted Array ,
+Leetcode 925. Long Pressed Name,
+Leetcode 844. Backspace String Compare,
+Leetcode 3. Longest Substring Without Repeating Characters (Medium),
+Leetcode 159. Longest Substring with At Most Two Distinct Characters (Medium),
+Leetcode 1004. Max Consecutive Ones III (Medium),
+Leetcode 76. Minimum Window Substring (Hard),
+Leetcode 15. 3Sum (Medium),
+Leetcode 134. Gas Station (Medium),
+Leetcode169 - Majority Element,
+Leetcode 438. Find All Anagrams in a String,
+
+4. Queue, Stack
+Leetcode 1047. Remove All Adjacent Duplicates In String,
+Leetcode 1021. Remove Outermost Parentheses,
+Leetcode 20. Valid Parentheses,
+Leetcode 225. Implement Stack using Queues,
+Leetcode 232. Implement Queue using Stacks,
+Leetcode 682. Baseball Game,
+Leetcode 844. Backspace String Compare,
+Leetcode 933. Number of Recent Calls,
+Leetcode 496. Next Greater Element I,
+Leetcode 394. Decode String,
+Leetcode 1381. Design a Stack With Increment Operation (Medium),
+Leetcode 155. Min Stack (Medium),
+Leetcode 503. Next Greater Element II (Medium),
+Leetcode 1003. Check If Word Is Valid After Substitutions (Medium),
+Leetcode 1441. Build an Array With Stack Operations (Medium),
+Leetcode 150. Evaluate Reverse Polish Notation (Medium),
+Leetcode 71. Simplify Path (Medium),
+Leetcode 402. Remove K Digits (Medium),
+Leetcode 394. Decode String (Medium),
+Leetcode 32. Longest Valid Parentheses (Hard),
+Leetcode 84. Largest Rectangle in Histogram (Hard),
+
+5. Recursion_binary tree
+
+Leetcode 1137. N-th Tribonacci Number,
+Leetcode 67. Add Binary,
+Leetcode 104. Maximum Depth of Binary Tree,
+Leetcode 111. Minimum Depth of Binary Tree,
+Leetcode 100. Same Tree,
+Leetcode 101. Symmetric Tree,
+Leetcode 108. Convert Sorted Array to Binary Search Tree,
+Leetcode 110. Balanced Binary Tree,
+Leetcode 222. Count Complete Tree Nodes,
+Leetcode 226. Invert Binary Tree,
+Leetcode 404. Sum of Left Leaves,
+Leetcode 559. Maximum Depth of N-ary Tree,
+Leetcode 617. Merge Two Binary Trees,
+Leetcode 700. Search in a Binary Search Tree,
+Leetcode 938. Range Sum of BST,
+Leetcode 965. Univalued Binary Tree,
+Leetcode 993. Cousins in Binary Tree,
+Leetcode 235. Lowest Common Ancestor of a Binary Search Tree (Medium),
+Leetcode 236. Lowest Common Ancestor of a Binary Tree (Medium),
+Leetcode 669. Trim a Binary Search Tree (Medium),
+Leetcode 156. Binary Tree Upside Down (Medium),
+Leetcode 124. Binary Tree Maximum Path Sum (Hard),
+
+
+6. Tree Traversal
+
+Leetcode 144. Binary Tree Preorder Traversal,
+Leetcode 257. Binary Tree Paths,
+Leetcode 112. Path Sum,
+Leetcode 113. Path Sum II (Medium),
+Leetcode 437. Path Sum III (Medium),
+Leetcode 129. Sum Root to Leaf Numbers (Medium),
+Leetcode 515. Find Largest Value in Each Tree Row (Medium),
+Leetcode 589. N-ary Tree Preorder Traversal,
+Leetcode 94. Binary Tree Inorder Traversal,
+Leetcode 230. Kth Smallest Element in a BST (Medium),
+Leetcode 98. Validate Binary Search Tree (Medium),
+Leetcode 99. Recover Binary Search Tree (Medium),
+Leetcode 173. Binary Search Tree Iterator (Medium),
+Leetcode 145. Binary Tree Postorder Traversal,
+Leetcode 637. Average of Levels in Binary Tree,
+Leetcode 513. Find Bottom Left Tree Value,
+Leetcode 102. Binary Tree Level Order Traversal (Medium),
+Leetcode 107. Binary Tree Level Order Traversal II (Medium),
+Leetcode 103. Binary Tree Zigzag Level Order Traversal (Medium),
+Leetcode 515. Find Largest Value in Each Tree Row (Medium),
+Leetcode 199. Binary Tree Right Side View,
+
+7. Dynamic programming
+Leetcode 1137. N-th Tribonacci Number,
+Leetcode 70. Climbing Stairs,
+Leetcode 746. Min Cost Climbing Stairs,
+Leetcode 121. Best Time to Buy and Sell Stock,
+Leetcode 122. Best Time to Buy and Sell Stock II (Medium),
+Leetcode 309. Best Time to Buy and Sell Stock with Cooldown ,
+Leetcode 714. Best Time to Buy and Sell Stock with Transaction Fee (Medium),
+Leetcode 53. Maximum Subarray,
+Leetcode 338. Counting Bits,
+Leetcode 392. Is Subsequence,
+Leetcode 942. DI String Match,
+Leetcode 1025. Divisor Game,
+Leetcode 152. Maximum Product Subarray (Medium),
+Leetcode 62. Unique Paths,
+Leetcode 63. Unique Paths II (Medium),
+Leetcode 64. Minimum Path Sum (Medium),
+Leetcode 198. House Robber,
+Leetcode 213. House Robber II,
+Leetcode 72. Edit Distance (Medium),
+Leetcode 91. Decode Ways (Medium),
+Leetcode 96. Unique Binary Search Trees (Medium),
+Leetcode 97. Interleaving String (Medium),
+Leetcode 120. Triangle (Medium),
+Leetcode 139. Word Break (Medium),
+Leetcode 140. Word Break II (Hard),
+Leetcode 279. Perfect Squares (Medium),
+Leetcode 300. Longest Increasing Subsequence (Medium),
+Leetcode 322. Coin Change (Medium),
+Leetcode 357. Count Numbers with Unique Digits (Medium),
+Leetcode 416. Partition Equal Subset Sum (Medium),
+Leetcode 1480. Running Sum of 1d Array,
+Leetcode 1143. Longest Common Subsequence,
+Leetcode 583. Delete Operation for Two Strings,
+Leetcode 132. Palindrome Partitioning II (Hard),
+
+8.Linked list
+Leetcode 237. Delete Node in a Linked List,
+Leetcode 203. Remove Linked List Elements,
+Leetcode 160. Intersection of Two Linked Lists,
+Leetcode 83. Remove Duplicates from Sorted List,
+Leetcode 876. Middle of the Linked List,
+Leetcode 206. Reverse Linked List,
+Leetcode 21. Merge Two Sorted Lists,
+Leetcode 234. Palindrome Linked List,
+Leetcode 114. Flatten Binary Tree to Linked List (Medium),
+Leetcode 141. Linked List Cycle,
+Leetcode 142. Linked List Cycle II (Medium),
+Leetcode 143. Reorder List (Medium),
+Leetcode 147. Insertion Sort List (Medium),
+Leetcode 148. Sort List (Medium),
+Leetcode 19 - Remove Nth Node From End of List (Medium),
+Leetcode 2. Add Two Numbers (Medium),
+Leetcode 707. Design Linked List (Medium),
+Leetcode 24. Swap Nodes in Pairs (Medium),
+Leetcode 61. Rotate List (Medium),
+Leetcode 82. Remove Duplicates from Sorted List II (Medium),
+Leetcode 109. Convert Sorted List to Binary Search Tree (Medium),
+Leetcode 138. Copy List with Random Pointer (Medium),
+Leetcode 328. Odd Even Linked List (Medium),
+Leetcode 369. Plus One Linked List (Medium),
+Leetcode 379. Design Phone Directory (Medium),
+Leetcode 426. Convert Binary Search Tree to Sorted Doubly Linked List (Medium),
+Leetcode 445. Add Two Numbers II (Medium),
+Leetcode 725. Split Linked List in Parts (Medium),
+Leetcode 708. Insert into a Cyclic Sorted List (Medium),
+Leetcode 817. Linked List Components (Medium),
+Leetcode 1019. Next Greater Node In Linked List (Medium),
+Leetcode 23. Merge k Sorted Lists (Hard),
+
+9. bit operation
+Leetcode 136. Single Number,
+Leetcode 191. Number of 1 Bits,
+Leetcode 190. Reverse Bits,
+Leetcode 231. Power of Two,
+Leetcode 342. Power of Four,
+Leetcode 268. Missing Number,
+Leetcode 389. Find the Difference,
+Leetcode 762. Prime Number of Set Bits in Binary Representation,
+Leetcode 401. Binary Watch,
+Leetcode 405. Convert a Number to Hexadecimal,
+Leetcode 461. Hamming Distance,
+Leetcode 78. Subsets (Medium),Merge Sorted Array
+Leetcode 137. Single Number II (Medium),
+Leetcode 371. Sum of Two Integers (Medium),
+Leetcode 784. Letter Case Permutation (Medium),
+Leetcode 898. Bitwise ORs of Subarrays (Medium),
+	
+10. Math
+Leetcode 9. Palindrome Number,
+Leetcode 13. Roman to Integer,
+Leetcode 14. Longest Common Prefix,
+Leetcode 28. Find the Index of the First Occurrence in a String,
+Leetcode 118. Pascal's Triangle,
+Leetcode 119. Pascal's Triangle II,
+Leetcode 326. Power of Three,
+Leetcode 66. Plus One,
+Leetcode 1025. Divisor Game,
+Leetcode 73. Set Matrix Zeroes (Medium),
+Leetcode 6. Zigzag Conversion (Medium),
+Leetcode 7. Reverse Integer (Medium),
+Leetcode 8. String to Integer (atoi) (Medium),
+Leetcode 29. Divide Two Integers (Medium),
+Leetcode 36. Valid Sudoku (Medium),
+Leetcode 38. Count and Say (Medium),
+Leetcode 43. Multiply Strings (Medium),
+Leetcode 48. Rotate Image (Medium),
+Leetcode 50. Pow(x, n) (Medium),
+Leetcode 54. Spiral Matrix (Medium),
+Leetcode 59. Spiral Matrix II (Medium),
+Leetcode 56. Merge Intervals (Medium),
+Leetcode 57. Insert Interval (Medium),
+Leetcode 189. Rotate Array (Medium),
+Leetcode 204. Count Primes (Medium),
+Leetcode 384. Shuffle an Array,
+
+11 Greedy
+Leetcode 77. Combinations (Medium),
+Leetcode 78. Subsets (Medium),
+Leetcode 46. Permutations (Medium),
+Leetcode 11. Container With Most Water (Medium),
+Leetcode 55. Jump Game (Medium),
+Leetcode 45. Jump Game II (Medium),
+Leetcode 139. Word Break (Medium),
+Leetcode 134. Gas Station (Medium),
+Leetcode 135. Candy (Hard),
