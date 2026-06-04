@@ -18,18 +18,17 @@ Leetcode 350. Intersection of Two Arrays II
 Leetcode 389. Find the Difference
 Leetcode 442. Find All Duplicates in an Array (Medium)
 Leetcode 448. Find All Numbers Disappeared in an Array
+Leetcode 767. Reorganize String (Medium)
 Leetcode 575. Distribute Candies
 Leetcode 28. Implement strstr(), Find the Index of the First Occurrence in a String 
 Leetcode 58. Length of Last Word
 Leetcode 14. Longest Common Prefix
-Leetcode 252. Meeting Rooms
 Leetcode 179. Largest Number (Medium)
+Leetcode 621. Task Scheduler (Medium)
+Leetcode 41. First Missing Positive (Hard)
 Leetcode 692. Top K Frequent Words (Medium)
-Leetcode 56. Merge Intervals (Medium)
-Leetcode 57. Insert Interval (Medium)
 Leetcode 438. Find All Anagrams in a String (Medium)
 Leetcode 560. Subarray Sum Equals K (Medium)
-Leetcode 435. Non-overlapping Intervals (Medium)
 Leetcode 525. Contiguous Array (Medium)
 Leetcode 49. Group Anagrams (Medium)
 Leetcode 238. Product of Array Except Self (Medium)
@@ -45,32 +44,12 @@ Leetcode 128. Longest Consecutive Sequence (Medium)
 Leetcode 3. Longest Substring Without Repeating Characters (Medium)
 Leetcode 159. Longest Substring with At Most Two Distinct Characters (Medium)
 Leetcode 65. Valid Number (Hard)
+Leetcode 252. Meeting Rooms
+Leetcode 56. Merge Intervals (Medium)
+Leetcode 57. Insert Interval (Medium)
+Leetcode 435. Non-overlapping Intervals (Medium)
 -----------------------------------------------------
-2_binary_search:
-Leetcode 35. Search Insert Position
-Leetcode 153. Find Minimum in Rotated Sorted Array (Medium)
-Leetcode 154. Find Minimum in Rotated Sorted Array II (Hard)
-Leetcode 69. Sqrt(x)
-Leetcode 167. Two Sum II - Input array is sorted
-Leetcode 278. First Bad Version
-Leetcode 349. Intersection of Two Arrays
-Leetcode 350. Intersection of Two Arrays II
-Leetcode 367. Valid Perfect Square
-Leetcode 374. Guess Number Higher or Lower
-Leetcode 441. Arranging Coins
-Leetcode 744. Find Smallest Letter Greater Than Target
-Leetcode 658. Find K Closest Elements (Medium)
-Leetcode 33. Search in Rotated Sorted Array (Medium)
-Leetcode 81. Search in Rotated Sorted Array II (Medium)
-Leetcode 852. Peak Index in a Mountain Array (Medium)
-Leetcode 287. Find the Duplicate Number (Medium)
-Leetcode 50. Pow(x, n) (Medium)
-Leetcode 74. Search a 2D Matrix (Medium)
-Leetcode 34. Find First and Last Position of Element in Sorted Array (Medium)
-Leetcode 162. Find Peak Element (Medium)
-Leetcode 981. Time Based Key-Value Store (Medium)
------------------------------------------------------
-3_two_pointer:
+2_two_pointer:
 Leetcode 26. Remove Duplicates from Sorted Array
 Leetcode 80. Remove Duplicates from Sorted Array II (Medium)
 Leetcode 283. Move Zeroes
@@ -105,7 +84,32 @@ Leetcode 134. Gas Station (Medium)
 Leetcode 169.Majority Element
 Leetcode 4. Median of Two Sorted Arrays (Hard)
 Leetcode 44. Wildcard Matching (Hard)
+Leetcode 30. Substring with Concatenation of All Words (Hard)
 Leetcode 438. Find All Anagrams in a String
+-----------------------------------------------------
+3_binary_search:
+Leetcode 35. Search Insert Position
+Leetcode 153. Find Minimum in Rotated Sorted Array (Medium)
+Leetcode 154. Find Minimum in Rotated Sorted Array II (Hard)
+Leetcode 69. Sqrt(x)
+Leetcode 167. Two Sum II - Input array is sorted
+Leetcode 278. First Bad Version
+Leetcode 349. Intersection of Two Arrays
+Leetcode 350. Intersection of Two Arrays II
+Leetcode 367. Valid Perfect Square
+Leetcode 374. Guess Number Higher or Lower
+Leetcode 441. Arranging Coins
+Leetcode 744. Find Smallest Letter Greater Than Target
+Leetcode 658. Find K Closest Elements (Medium)
+Leetcode 33. Search in Rotated Sorted Array (Medium)
+Leetcode 81. Search in Rotated Sorted Array II (Medium)
+Leetcode 852. Peak Index in a Mountain Array (Medium)
+Leetcode 287. Find the Duplicate Number (Medium)
+Leetcode 50. Pow(x, n) (Medium)
+Leetcode 74. Search a 2D Matrix (Medium)
+Leetcode 34. Find First and Last Position of Element in Sorted Array (Medium)
+Leetcode 162. Find Peak Element (Medium)
+Leetcode 981. Time Based Key-Value Store (Medium)
 -----------------------------------------------------
 4_queue_stack:
 Leetcode 1047. Remove All Adjacent Duplicates In String
@@ -127,6 +131,7 @@ Leetcode 150. Evaluate Reverse Polish Notation (Medium)
 Leetcode 71. Simplify Path (Medium)
 Leetcode 402. Remove K Digits (Medium)
 Leetcode 394. Decode String (Medium)
+Leetcode 856. Score of Parentheses (Medium)
 Leetcode 32. Longest Valid Parentheses (Hard)
 Leetcode 84. Largest Rectangle in Histogram (Hard)
 Leetcode 227. Basic Calculator II (Medium)
@@ -188,11 +193,12 @@ Leetcode 199. Binary Tree Right Side View
 Leetcode 130. Surrounded Regions (Medium)
 Leetcode 127. Word Ladder (Hard)
 Leetcode 126. Word Ladder II (Hard)
+Leetcode 51. N-Queens (Hard)
 Leetcode 542. 01 Matrix (Medium)
 Leetcode 417. Pacific Atlantic Water Flow (Medium)
 Leetcode 1730. Shortest Path to Get Food
 Leetcode 994. Rotting Oranges (Medium)
-Leetcode 1197. Minimum Knight Moves
+Leetcode 1197. Minimum Knight Moves (Medium)
 Leetcode 211. Design Add and Search Words Data Structure (Medium)
 Leetcode 449. Serialize and Deserialize BST (Medium)
 Leetcode 208. Implement Trie (Prefix Tree) (Medium)
@@ -218,6 +224,7 @@ Leetcode 63. Unique Paths II (Medium)
 Leetcode 64. Minimum Path Sum (Medium)
 Leetcode 198. House Robber
 Leetcode 213. House Robber II
+Leetcode 42. Trapping Rain Water (Hard)
 Leetcode 72. Edit Distance (Medium)
 Leetcode 91. Decode Ways (Medium)
 Leetcode 96. Unique Binary Search Trees (Medium)
@@ -332,6 +339,7 @@ Leetcode 39. Combination Sum (Medium)
 Leetcode 40. Combination Sum II (Medium)
 Leetcode 22. Generate Parentheses (Medium)
 Leetcode 93. Restore IP Addresses (Medium)
+Leetcode 842. Split Array into Fibonacci Sequence (Medium)
 Leetcode 79. Word Search (Medium)
 Leetcode 212. Word Search II (Hard)
 Leetcode 77. Combinations (Medium)
@@ -342,6 +350,7 @@ Leetcode 47. Permutations II (Medium)
 Leetcode 31. Next Permutation (Medium)
 Leetcode 17. Letter Combinations of a Phone Number (Medium)
 Leetcode 60. Permutation Sequence (Hard)
+Leetcode 37. Sudoku Solver (Hard)
 Leetcode 11. Container With Most Water (Medium)
 Leetcode 55. Jump Game (Medium)
 Leetcode 45. Jump Game II (Medium)

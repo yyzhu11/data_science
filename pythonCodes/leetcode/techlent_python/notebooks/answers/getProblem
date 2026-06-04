@@ -10,19 +10,18 @@ sed 's/    "# //g' problems.txt > problems_new.txt
 sed 's/\\n",//g' problems_new.txt > problems.txt
 echo '-----------------------------------------------------' >> problems.txt
 
-echo '2_binary_search:' >>  problems.txt
-grep 'Leetcode' 2_binary_search.ipynb >> problems.txt
-sed 's/    "# //g' problems.txt > problems_new.txt
-sed 's/\\n",//g' problems_new.txt > problems.txt
-echo '-----------------------------------------------------' >> problems.txt
-
-
-echo '3_two_pointer:' >>  problems.txt
-grep 'Leetcode' 3_two_pointer.ipynb >> problems.txt
+echo '2_two_pointer:' >>  problems.txt
+grep 'Leetcode' 2_two_pointer.ipynb >> problems.txt
 sed 's/    "# //g' problems.txt > problems_new.txt
 sed 's/    "## //g' problems_new.txt > problems.txt
 sed 's/\\n",//g' problems.txt > problems_new.txt
 cp problems_new.txt problems.txt
+echo '-----------------------------------------------------' >> problems.txt
+
+echo '3_binary_search:' >>  problems.txt
+grep 'Leetcode' 3_binary_search.ipynb >> problems.txt
+sed 's/    "# //g' problems.txt > problems_new.txt
+sed 's/\\n",//g' problems_new.txt > problems.txt
 echo '-----------------------------------------------------' >> problems.txt
 
 echo '4_queue_stack:' >>  problems.txt
