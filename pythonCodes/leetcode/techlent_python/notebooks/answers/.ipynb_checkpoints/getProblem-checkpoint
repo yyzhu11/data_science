@@ -1,0 +1,97 @@
+echo '0_sort:' >  problems.txt
+grep 'Leetcode' 0_sort.ipynb >> problems.txt
+sed 's/    "# //g' problems.txt > problems_new.txt
+sed 's/\\n",//g' problems_new.txt > problems.txt
+echo '-----------------------------------------------------' >> problems.txt
+
+echo '1_basic:' >>  problems.txt
+grep 'Leetcode' 1_basic.ipynb >> problems.txt
+sed 's/    "# //g' problems.txt > problems_new.txt
+sed 's/\\n",//g' problems_new.txt > problems.txt
+echo '-----------------------------------------------------' >> problems.txt
+
+echo '2_two_pointer:' >>  problems.txt
+grep 'Leetcode' 2_two_pointer.ipynb >> problems.txt
+sed 's/    "# //g' problems.txt > problems_new.txt
+sed 's/    "## //g' problems_new.txt > problems.txt
+sed 's/\\n",//g' problems.txt > problems_new.txt
+cp problems_new.txt problems.txt
+echo '-----------------------------------------------------' >> problems.txt
+
+echo '3_binary_search:' >>  problems.txt
+grep 'Leetcode' 3_binary_search.ipynb >> problems.txt
+sed 's/    "# //g' problems.txt > problems_new.txt
+sed 's/\\n",//g' problems_new.txt > problems.txt
+echo '-----------------------------------------------------' >> problems.txt
+
+echo '4_queue_stack:' >>  problems.txt
+grep 'Leetcode' 4_queue_stack.ipynb >> problems.txt
+sed 's/    "# //g' problems.txt > problems_new.txt
+sed 's/\\n",//g' problems_new.txt > problems.txt
+echo '-----------------------------------------------------' >> problems.txt
+
+
+
+echo '5_recursion_tree:' >>  problems.txt
+grep 'Leetcode' 5_recursion_tree.ipynb >> problems.txt
+sed 's/    "# //g' problems.txt > problems_new.txt
+sed 's/    "## //g' problems_new.txt > problems.txt
+sed 's/\\n",//g' problems.txt > problems_new.txt
+cp problems_new.txt problems.txt
+echo '-----------------------------------------------------' >> problems.txt
+
+echo '6_Tree_Traversal_DFS:' >>  problems.txt
+grep 'Leetcode' 6_Tree_Traversal_DFS.ipynb >> problems.txt
+sed 's/    "# //g' problems.txt > problems_new.txt
+sed 's/\\n",//g' problems_new.txt > problems.txt
+echo '-----------------------------------------------------' >> problems.txt
+
+
+echo '7_dynamic_programming:' >>  problems.txt
+grep 'Leetcode' 7_dynamic_programming.ipynb >> problems.txt
+sed 's/    "# //g' problems.txt > problems_new.txt
+sed 's/\\n",//g' problems_new.txt > problems.txt
+echo '-----------------------------------------------------' >> problems.txt
+
+
+echo '8_linked_list:' >>  problems.txt
+grep 'Leetcode' 8_linked_list.ipynb >> problems.txt
+sed 's/    "# //g' problems.txt > problems_new.txt
+sed 's/\\n",//g' problems_new.txt > problems.txt
+echo '-----------------------------------------------------' >> problems.txt
+
+
+echo '9_bit_op:' >>  problems.txt
+grep 'Leetcode' 9_bit_op.ipynb >> problems.txt
+sed 's/    "# //g' problems.txt > problems_new.txt
+sed 's/    "## //g' problems_new.txt > problems.txt
+sed 's/\\n",//g' problems.txt > problems_new.txt
+cp problems_new.txt problems.txt
+echo '-----------------------------------------------------' >> problems.txt
+
+echo '10_math:' >>  problems.txt
+grep 'Leetcode' 10_math.ipynb >> problems.txt
+sed 's/    "# //g' problems.txt > problems_new.txt
+sed 's/    "## //g' problems_new.txt > problems.txt
+sed 's/\\n",//g' problems.txt > problems_new.txt
+cp problems_new.txt problems.txt
+echo '-----------------------------------------------------' >> problems.txt
+
+
+echo '11_Greedy_backtracking:' >>  problems.txt
+grep 'Leetcode' 11_Greedy_backtracking.ipynb >> problems.txt
+sed 's/    "# //g' problems.txt > problems_new.txt
+sed 's/    "## //g' problems_new.txt > problems.txt
+sed 's/\\n",//g' problems.txt > problems_new.txt
+cp problems_new.txt problems.txt
+echo '-----------------------------------------------------' >> problems.txt
+
+echo '12_Graph_Heap:' >>  problems.txt
+grep 'Leetcode' 12_Graph_Heap.ipynb >> problems.txt
+sed 's/    "# //g' problems.txt > problems_new.txt
+sed 's/    "## //g' problems_new.txt > problems.txt
+sed 's/\\n",//g' problems.txt > problems_new.txt
+cp problems_new.txt problems.txt
+echo '-----------------------------------------------------' >> problems.txt
+
+
