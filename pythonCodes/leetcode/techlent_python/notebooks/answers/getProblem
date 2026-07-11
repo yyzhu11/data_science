@@ -61,16 +61,16 @@ sed 's/\\n",//g' problems_new.txt > problems.txt
 echo '-----------------------------------------------------' >> problems.txt
 
 
-echo '9_bit_op:' >>  problems.txt
-grep 'Leetcode' 9_bit_op.ipynb >> problems.txt
+echo '9_Greedy_backtracking:' >>  problems.txt
+grep 'Leetcode' 9_Greedy_backtracking.ipynb >> problems.txt
 sed 's/    "# //g' problems.txt > problems_new.txt
 sed 's/    "## //g' problems_new.txt > problems.txt
 sed 's/\\n",//g' problems.txt > problems_new.txt
 cp problems_new.txt problems.txt
 echo '-----------------------------------------------------' >> problems.txt
 
-echo '10_math:' >>  problems.txt
-grep 'Leetcode' 10_math.ipynb >> problems.txt
+echo '10_bit_op:' >>  problems.txt
+grep 'Leetcode' 10_bit_op.ipynb >> problems.txt
 sed 's/    "# //g' problems.txt > problems_new.txt
 sed 's/    "## //g' problems_new.txt > problems.txt
 sed 's/\\n",//g' problems.txt > problems_new.txt
@@ -78,8 +78,8 @@ cp problems_new.txt problems.txt
 echo '-----------------------------------------------------' >> problems.txt
 
 
-echo '11_Greedy_backtracking:' >>  problems.txt
-grep 'Leetcode' 11_Greedy_backtracking.ipynb >> problems.txt
+echo '11_math:' >>  problems.txt
+grep 'Leetcode' 11_math.ipynb >> problems.txt
 sed 's/    "# //g' problems.txt > problems_new.txt
 sed 's/    "## //g' problems_new.txt > problems.txt
 sed 's/\\n",//g' problems.txt > problems_new.txt

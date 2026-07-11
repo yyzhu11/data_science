@@ -316,11 +316,80 @@ Leetcode 1019. Next Greater Node In Linked List (Medium)
 Leetcode 23. Merge k Sorted Lists (Hard)
 Leetcode 25. Reverse Nodes in k-Group (Hard)
 -----------------------------------------------------
-9_bit_op:
+9_Greedy_backtracking:
+Leetcode 17. Letter Combinations of a Phone Number (Medium)
+Leetcode 78. Subsets (Medium)
+Leetcode 90. Subsets II (Medium)
+Leetcode 77. Combinations (Medium)
+Leetcode 46. Permutations (Medium)
+Leetcode 47. Permutations II (Medium)
+Leetcode 39. Combination Sum (Medium)
+Leetcode 40. Combination Sum II (Medium)
+Leetcode 216. Combination Sum III (Medium)
+Leetcode 22. Generate Parentheses (Medium)
+Leetcode 93. Restore IP Addresses (Medium)
+Leetcode 842. Split Array into Fibonacci Sequence (Medium)
+Leetcode 79. Word Search (Medium)
+Leetcode 212. Word Search II (Hard)
+Leetcode 60. Permutation Sequence (Hard)
+Leetcode 37. Sudoku Solver (Hard)
+Leetcode 942. DI String Match
+Leetcode 1029. Two City Scheduling (Medium)
+Leetcode 11. Container With Most Water (Medium)
+Leetcode 3. Longest Substring Without Repeating Characters (Medium)
+Leetcode 55. Jump Game (Medium)
+Leetcode 45. Jump Game II (Medium)
+Leetcode 134. Gas Station (Medium)
+Leetcode 135. Candy (Hard)
 -----------------------------------------------------
-10_math:
+10_bit_op:
+Leetcode 136. Single Number
+Leetcode 191. Number of 1 Bits
+Leetcode 190. Reverse Bits
+Leetcode 231. Power of Two
+Leetcode 342. Power of Four
+Leetcode 268. Missing Number
+Leetcode 389. Find the Difference
+Leetcode 762. Prime Number of Set Bits in Binary Representation
+Leetcode 401. Binary Watch
+Leetcode 405. Convert a Number to Hexadecimal
+Leetcode 461. Hamming Distance
+Leetcode 78. Subsets (Medium)
+Leetcode 89. Gray Code (Medium)
+Leetcode 137. Single Number II (Medium)
+Leetcode 371. Sum of Two Integers (Medium)
+Leetcode 784. Letter Case Permutation (Medium)
+Leetcode 898. Bitwise ORs of Subarrays (Medium)
 -----------------------------------------------------
-11_Greedy_backtracking:
+11_math:
+Leetcode 1025. Divisor Game
+Leetcode 9. Palindrome Number
+Leetcode 13. Roman to Integer
+Leetcode 118. Pascal's Triangle
+Leetcode 119. Pascal's Triangle II
+Leetcode 231. Power of Two
+Leetcode 326. Power of Three
+Leetcode 342. Power of Four
+Leetcode 66. Plus One
+Leetcode 73. Set Matrix Zeroes (Medium)
+Leetcode 6. Zigzag Conversion (Medium)
+Leetcode 7. Reverse Integer (Medium)
+Leetcode 8. String to Integer (atoi) (Medium)
+Leetcode 29. Divide Two Integers (Medium)
+Leetcode 36. Valid Sudoku (Medium)
+Leetcode 38. Count and Say (Medium)
+Leetcode 43. Multiply Strings (Medium)
+Leetcode 48. Rotate Image (Medium)
+Leetcode 50. Pow(x, n) (Medium)
+Leetcode 54. Spiral Matrix (Medium)
+Leetcode 59. Spiral Matrix II (Medium)
+Leetcode 56. Merge Intervals (Medium)
+Leetcode 57. Insert Interval (Medium)
+Leetcode 189. Rotate Array (Medium)
+Leetcode 204. Count Primes (Medium)
+Leetcode 149. Max Points on a Line (Hard)
+Leetcode 384. Shuffle an Array (Medium)
+Leetcode 65. Valid Number (Hard)
 -----------------------------------------------------
 12_Graph_Heap:
 Leetcode 133. Clone Graph (Medium)
