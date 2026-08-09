@@ -1,5 +1,5 @@
 echo '0_sort:' >  problems.txt
-grep 'Leetcode' 0_sort.ipynb >> problems.txt
+grep 'Leetcode' 0_*.ipynb >> problems.txt
 sed 's/    "# //g' problems.txt > problems_new.txt
 sed 's/\\n",//g' problems_new.txt > problems.txt
 echo '-----------------------------------------------------' >> problems.txt
