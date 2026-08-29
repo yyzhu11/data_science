@@ -41,12 +41,12 @@ Leetcode 242. Valid Anagram
 Leetcode 383. Ransom Note
 Leetcode 697. Degree of an Array
 Leetcode 692. Top K Frequent Words (Medium)
-Leetcode 3. Longest Substring Without Repeating Characters (Medium)
-Leetcode 621. Task Scheduler (Medium)
-Leetcode 451. Sort Characters By Frequency (Medium)
 Leetcode 347. Top K Frequent Elements (Medium)
-Leetcode 128. Longest Consecutive Sequence (Medium)
+Leetcode 451. Sort Characters By Frequency (Medium)
+Leetcode 3. Longest Substring Without Repeating Characters (Medium)
 Leetcode 594. Longest Harmonious Subsequence
+Leetcode 128. Longest Consecutive Sequence (Medium)
+Leetcode 621. Task Scheduler (Medium)
 Leetcode 767. Reorganize String (Medium)
 Leetcode 1054. Distant Barcodes (Medium)
 Leetcode 1436. Destination City
@@ -71,12 +71,13 @@ Leetcode 249. Group Shifted Strings (Medium)
 2_array:
 Leetcode 303. Range Sum Query - Immutable
 Leetcode 304. Range Sum Query 2D - Immutable (Medium)
+Leetcode 1480. Running Sum of 1d Array
 Leetcode 724. Find Pivot Index
 Leetcode 1524. Number of Sub-arrays With Odd Sum (Medium)
 Leetcode 1749. Maximum Absolute Sum of Any Subarray (Medium)
+Leetcode 560. Subarray Sum Equals K (Medium)
 Leetcode 325. Maximum Size Subarray Sum Equals k (Medium)
 Leetcode 523. Continuous Subarray Sum (Medium)
-Leetcode 560. Subarray Sum Equals K (Medium)
 Leetcode 238. Product of Array Except Self (Medium)
 Leetcode 370. Range Addition (Medium)
 Leetcode 1109. Corporate Flight Bookings (Medium)
@@ -84,15 +85,15 @@ Leetcode 2536. Increment Submatrices by One (Medium)
 Leetcode 525. Contiguous Array (Medium)
 Leetcode 930. Binary Subarrays With Sum (Medium)
 Leetcode 1508. Range Sum of Sorted Subarray Sums (Medium)
-Leetcode 1480. Running Sum of 1d Array
 Leetcode 1248. Count Number of Nice Subarrays (Medium)
 Leetcode 1094. Car Pooling (Medium)
 Leetcode 2460. Apply Operations to an Array
 Leetcode 575. Distribute Candies
+Leetcode 1287. Element Appearing More Than 25% In Sorted Array
+Leetcode 163. Missing Ranges (Medium)
 Leetcode 566. Reshape the Matrix
 Leetcode 766. Toeplitz Matrix
 Leetcode 1314. Matrix Block Sum (Medium)
-Leetcode 1287. Element Appearing More Than 25% In Sorted Array
 Leetcode 1200. Minimum Absolute Difference
 Leetcode 189. Rotate Array (Medium)
 Leetcode 532. K-diff Pairs in an Array (Medium)
@@ -100,7 +101,6 @@ Leetcode 31. Next Permutation (Medium)
 Leetcode 628. Maximum Product of Three Numbers
 Leetcode 713. Subarray Product Less Than K (Medium)
 Leetcode 907. Sum of Subarray Minimums (Medium)
-Leetcode 163. Missing Ranges (Medium)
 Leetcode 891. Sum of Subsequence Widths (Hard)
 Leetcode 65. Valid Number (Hard)
 Leetcode 363. Max Sum of Rectangle No Larger Than K (Hard)
