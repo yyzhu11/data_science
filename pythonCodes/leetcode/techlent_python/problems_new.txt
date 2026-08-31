@@ -192,6 +192,32 @@ Leetcode 44. Wildcard Matching (Hard)
 Leetcode 632. Smallest Range Covering Elements from K Lists (Hard)
 -----------------------------------------------------
 5_binary_search:
+Leetcode 35. Search Insert Position
+Leetcode 153. Find Minimum in Rotated Sorted Array (Medium)
+Leetcode 154. Find Minimum in Rotated Sorted Array II (Hard)
+Leetcode 69. Sqrt(x)
+Leetcode 169. Majority Element
+Leetcode 167. Two Sum II - Input array is sorted
+Leetcode 278. First Bad Version
+Leetcode 349. Intersection of Two Arrays
+Leetcode 350. Intersection of Two Arrays II
+Leetcode 367. Valid Perfect Square
+Leetcode 374. Guess Number Higher or Lower
+Leetcode 441. Arranging Coins
+Leetcode 744. Find Smallest Letter Greater Than Target
+Leetcode 540. Single Element in a Sorted Array (Medium)
+Leetcode 658. Find K Closest Elements (Medium)
+Leetcode 33. Search in Rotated Sorted Array (Medium)
+Leetcode 81. Search in Rotated Sorted Array II (Medium)
+Leetcode 852. Peak Index in a Mountain Array (Medium)
+Leetcode 287. Find the Duplicate Number (Medium)
+Leetcode 50. Pow(x, n) (Medium)
+Leetcode 53. Maximum Subarray
+Leetcode 74. Search a 2D Matrix (Medium)
+Leetcode 34. Find First and Last Position of Element in Sorted Array (Medium)
+Leetcode 162. Find Peak Element (Medium)
+Leetcode 981. Time Based Key-Value Store (Medium)
+Leetcode 4. Median of Two Sorted Arrays (Hard)
 -----------------------------------------------------
 6_queue_stack:
 Leetcode 1381. Design a Stack With Increment Operation (Medium)
