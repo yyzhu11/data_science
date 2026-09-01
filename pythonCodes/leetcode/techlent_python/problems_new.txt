@@ -192,6 +192,8 @@ Leetcode 44. Wildcard Matching (Hard)
 Leetcode 632. Smallest Range Covering Elements from K Lists (Hard)
 -----------------------------------------------------
 5_binary_search:
+Leetcode 704. Binary Search
+Leetcode 34. Find First and Last Position of Element in Sorted Array(Medium)
 Leetcode 35. Search Insert Position
 Leetcode 153. Find Minimum in Rotated Sorted Array (Medium)
 Leetcode 154. Find Minimum in Rotated Sorted Array II (Hard)
@@ -216,8 +218,20 @@ Leetcode 53. Maximum Subarray
 Leetcode 74. Search a 2D Matrix (Medium)
 Leetcode 34. Find First and Last Position of Element in Sorted Array (Medium)
 Leetcode 162. Find Peak Element (Medium)
+Leetcode 215. Kth Largest Element in an Array (Medium)
+Leetcode 378. Kth Smallest Element in a Sorted Matrix(Medium)
 Leetcode 981. Time Based Key-Value Store (Medium)
+Leetcode 1011. Capacity To Ship Packages Within D Days(Medium)
+Leetcode 698. Partition to K Equal Sum Subsets (Medium)
+Leetcode 1237. Find Positive Integer Solution for a Given Equation(Medium)
+Leetcode 1891. Cutting Ribbons (Medium)
 Leetcode 4. Median of Two Sorted Arrays (Hard)
+Leetcode 493. Reverse Pairs (Hard)
+Leetcode 410. Split Array Largest Sum(Hard)
+Leetcode 2426. Number of Pairs Satisfying Inequality (Hard)
+Leetcode 354. Russian Doll Envelopes (Hard)
+Leetcode 363. Max Sum of Rectangle No Larger Than K(Hard)
+Leetcode 1231. Divide Chocolate(Hard)
 -----------------------------------------------------
 6_queue_stack:
 Leetcode 1381. Design a Stack With Increment Operation (Medium)
@@ -247,15 +261,19 @@ Leetcode 150. Evaluate Reverse Polish Notation (Medium)
 Leetcode 402. Remove K Digits (Medium)
 Leetcode 394. Decode String (Medium)
 Leetcode 856. Score of Parentheses (Medium)
+Leetcode 678. Valid Parenthesis String (Medium)
 Leetcode 227. Basic Calculator II (Medium)
 Leetcode 907. Sum of Subarray Minimums (Medium)
 Leetcode 2390. Removing Stars From a String(Medium)
 Leetcode 2434. Using a Robot to Print the Lexicographically Smallest String(Medium)
 Leetcode 1717. Maximum Score From Removing Substrings(Medium)
 Leetcode 1653. Minimum Deletions to Make String Balanced (Medium)
+Leetcode 456. 132 Pattern (Medium)
 Leetcode 2345. Finding the Number of Visible Mountains
 Leetcode 895. Maximum Frequency Stack (Hard)
 Leetcode 2296. Design a Text Editor(Hard)
+Leetcode 85. Maximal Rectangle (Hard)
+Leetcode 224. Basic Calculator (Hard)
 Leetcode 225. Implement Stack using Queues
 Leetcode 933. Number of Recent Calls
 Leetcode 239. Sliding Window Maximum (Hard)
