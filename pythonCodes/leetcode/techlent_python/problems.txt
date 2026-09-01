@@ -27,6 +27,7 @@
 Leetcode 705. Design HashSet 
 Leetcode 706. Design HashMap
 Leetcode 1429. First Unique Number
+Leetcode 676. Implement Magic Dictionary (Medium)
 Leetcode 205. Isomorphic Strings
 Leetcode 771. Jewels and Stones
 Leetcode 804. Unique Morse Code Words
@@ -79,29 +80,46 @@ Leetcode 560. Subarray Sum Equals K (Medium)
 Leetcode 930. Binary Subarrays With Sum (Medium)
 Leetcode 325. Maximum Size Subarray Sum Equals k (Medium)
 Leetcode 523. Continuous Subarray Sum (Medium)
+Leetcode 525. Contiguous Array (Medium)
 Leetcode 238. Product of Array Except Self (Medium)
 Leetcode 370. Range Addition (Medium)
+Leetcode 598. Range Addition II
 Leetcode 1109. Corporate Flight Bookings (Medium)
 Leetcode 1094. Car Pooling (Medium)
 Leetcode 2536. Increment Submatrices by One (Medium)
 Leetcode 575. Distribute Candies
+Leetcode 485. Max Consecutive Ones
+Leetcode 495. Teemo Attacking
+Leetcode 414. Third Maximum Number
+Leetcode 645. Set Mismatch
 Leetcode 2460. Apply Operations to an Array
+Leetcode 453. Minimum Moves to Equal Array Elements (Medium)
 Leetcode 532. K-diff Pairs in an Array (Medium)
 Leetcode 189. Rotate Array (Medium)
-Leetcode 525. Contiguous Array (Medium)
+Leetcode 396. Rotate Function (Medium)
 Leetcode 1508. Range Sum of Sorted Subarray Sums (Medium)
 Leetcode 1248. Count Number of Nice Subarrays (Medium)
 Leetcode 163. Missing Ranges (Medium)
 Leetcode 769. Max Chunks To Make Sorted (Medium)
 Leetcode 713. Subarray Product Less Than K (Medium)
+Leetcode 665. Non-decreasing Array (Medium)
+Leetcode 118. Pascal's Triangle
+Leetcode 119. Pascal's Triangle II
 Leetcode 628. Maximum Product of Three Numbers
 Leetcode 1200. Minimum Absolute Difference
 Leetcode 1287. Element Appearing More Than 25% In Sorted Array
 Leetcode 766. Toeplitz Matrix
+Leetcode 661. Image Smoother
 Leetcode 566. Reshape the Matrix
 Leetcode 48. Rotate Image (Medium)
+Leetcode 73. Set Matrix Zeroes (Medium)
+Leetcode 289. Game of Life (Medium)
+Leetcode 54. Spiral Matrix (Medium)
+Leetcode 59. Spiral Matrix II (Medium)
+Leetcode 498. Diagonal Traverse (Medium)
 Leetcode 1314. Matrix Block Sum (Medium)
 Leetcode 240. Search a 2D Matrix II (Medium)
+Leetcode 419. Battleships in a Board (Medium)
 Leetcode 891. Sum of Subsequence Widths (Hard)
 Leetcode 65. Valid Number (Hard)
 Leetcode 363. Max Sum of Rectangle No Larger Than K (Hard)
@@ -162,18 +180,24 @@ Leetcode 75. Sort Colors (Medium)
 Leetcode 11. Container With Most Water (Medium)
 Leetcode 611. Valid Triangle Number (Medium)
 Leetcode 1679. Max Number of K-Sum Pairs (Medium)
+Leetcode 42. Trapping Rain Water(Hard)
 Leetcode 392. Is Subsequence
 Leetcode 88. Merge Sorted Array 
+Leetcode 475. Heaters (Medium)
 Leetcode 524. Longest Word in Dictionary through Deleting (Medium)
 Leetcode 925. Long Pressed Name
 Leetcode 844. Backspace String Compare
 Leetcode 524. Longest Word in Dictionary through Deleting (Medium)
 Leetcode 1213. Intersection of Three Sorted Arrays
+Leetcode 643. Maximum Average Subarray I
 Leetcode 3. Longest Substring Without Repeating Characters (Medium)
+Leetcode 674. Longest Continuous Increasing Subsequence
 Leetcode 159. Longest Substring with At Most Two Distinct Characters (Medium)
 Leetcode 1004. Max Consecutive Ones III (Medium)
+Leetcode 424. Longest Repeating Character Replacement (Medium)
 Leetcode 76. Minimum Window Substring (Hard)
 Leetcode 340. Longest Substring with At Most K Distinct Characters (Hard)
+Leetcode 187. Repeated DNA Sequences(Medium)
 Leetcode 567. Permutation in String (Medium)
 Leetcode 209. Minimum Size Subarray Sum (Medium)
 Leetcode 1456. Maximum Number of Vowels in a Substring of Given Length(Medium)
@@ -181,9 +205,9 @@ Leetcode 1493. Longest Subarray of 1's After Deleting One Element(Medium)
 Leetcode 1658. Minimum Operations to Reduce X to Zero (Medium)
 Leetcode 438. Find All Anagrams in a String
 Leetcode 30. Substring with Concatenation of All Words (Hard)
+Leetcode 82. Remove Duplicates from Sorted List II (Medium)
 Leetcode 31. Next Permutation (Medium)
 Leetcode 647. Palindromic Substrings (Medium)
-Leetcode 424. Longest Repeating Character Replacement (Medium)
 Leetcode 409. Longest Palindrome
 Leetcode 134. Gas Station (Medium)
 Leetcode 169. Majority Element
@@ -194,32 +218,37 @@ Leetcode 632. Smallest Range Covering Elements from K Lists (Hard)
 5_binary_search:
 Leetcode 704. Binary Search
 Leetcode 34. Find First and Last Position of Element in Sorted Array(Medium)
+Leetcode 540. Single Element in a Sorted Array (Medium)
+Leetcode 275. H-Index II (Medium)
+Leetcode 436. Find Right Interval (Medium)
+Leetcode 300. Longest Increasing Subsequence (Medium)
 Leetcode 35. Search Insert Position
+Leetcode 374. Guess Number Higher or Lower
+Leetcode 278. First Bad Version
+Leetcode 367. Valid Perfect Square
+Leetcode 69. Sqrt(x)
+Leetcode 441. Arranging Coins
 Leetcode 153. Find Minimum in Rotated Sorted Array (Medium)
 Leetcode 154. Find Minimum in Rotated Sorted Array II (Hard)
-Leetcode 69. Sqrt(x)
-Leetcode 169. Majority Element
-Leetcode 167. Two Sum II - Input array is sorted
-Leetcode 278. First Bad Version
-Leetcode 349. Intersection of Two Arrays
-Leetcode 350. Intersection of Two Arrays II
-Leetcode 367. Valid Perfect Square
-Leetcode 374. Guess Number Higher or Lower
-Leetcode 441. Arranging Coins
-Leetcode 744. Find Smallest Letter Greater Than Target
-Leetcode 540. Single Element in a Sorted Array (Medium)
-Leetcode 658. Find K Closest Elements (Medium)
 Leetcode 33. Search in Rotated Sorted Array (Medium)
 Leetcode 81. Search in Rotated Sorted Array II (Medium)
+Leetcode 169. Majority Element
+Leetcode 167. Two Sum II - Input array is sorted
+Leetcode 349. Intersection of Two Arrays
+Leetcode 350. Intersection of Two Arrays II
+Leetcode 744. Find Smallest Letter Greater Than Target
+Leetcode 658. Find K Closest Elements (Medium)
 Leetcode 852. Peak Index in a Mountain Array (Medium)
 Leetcode 287. Find the Duplicate Number (Medium)
 Leetcode 50. Pow(x, n) (Medium)
 Leetcode 53. Maximum Subarray
 Leetcode 74. Search a 2D Matrix (Medium)
-Leetcode 34. Find First and Last Position of Element in Sorted Array (Medium)
+Leetcode 240. Search a 2D Matrix II (Medium)
 Leetcode 162. Find Peak Element (Medium)
 Leetcode 215. Kth Largest Element in an Array (Medium)
 Leetcode 378. Kth Smallest Element in a Sorted Matrix(Medium)
+Leetcode 668. Kth Smallest Number in Multiplication Table (Hard)
+Leetcode 483. Smallest Good Base (Hard)
 Leetcode 981. Time Based Key-Value Store (Medium)
 Leetcode 1011. Capacity To Ship Packages Within D Days(Medium)
 Leetcode 698. Partition to K Equal Sum Subsets (Medium)
@@ -253,6 +282,7 @@ Leetcode 71. Simplify Path (Medium)
 Leetcode 1047. Remove All Adjacent Duplicates In String
 Leetcode 1021. Remove Outermost Parentheses
 Leetcode 20. Valid Parentheses
+Leetcode 636. Exclusive Time of Functions(Medium)
 Leetcode 1249. Minimum Remove to Make Valid Parentheses(Medium)
 Leetcode 32. Longest Valid Parentheses (Hard)
 Leetcode 682. Baseball Game
@@ -278,10 +308,12 @@ Leetcode 1653. Minimum Deletions to Make String Balanced (Medium)
 Leetcode 456. 132 Pattern (Medium)
 Leetcode 2345. Finding the Number of Visible Mountains
 Leetcode 1504. Count Submatrices With All Ones (Medium)
+Leetcode 388. Longest Absolute File Path(Medium)
 Leetcode 895. Maximum Frequency Stack (Hard)
 Leetcode 2296. Design a Text Editor(Hard)
 Leetcode 85. Maximal Rectangle (Hard)
 Leetcode 224. Basic Calculator (Hard)
+Leetcode 591. Tag Validator(Hard)
 Leetcode 622. Design Circular Queue (Medium)
 Leetcode 641. Design Circular Deque (Medium)
 Leetcode 1670. Design Front Middle Back Queue(Medium)
@@ -451,6 +483,8 @@ Leetcode 160. Intersection of Two Linked Lists
 Leetcode 83. Remove Duplicates from Sorted List
 Leetcode 876. Middle of the Linked List
 Leetcode 206. Reverse Linked List
+Leetcode 24. Swap Nodes in Pairs (Medium)
+Leetcode 61. Rotate List (Medium)
 Leetcode 234. Palindrome Linked List
 Leetcode 92. Reverse Linked List II (Medium)
 Leetcode 21. Merge Two Sorted Lists
@@ -463,9 +497,8 @@ Leetcode 147. Insertion Sort List (Medium)
 Leetcode 148. Sort List (Medium)
 Leetcode 19. Remove Nth Node From End of List (Medium)
 Leetcode 2. Add Two Numbers (Medium)
+Leetcode 445. Add Two Numbers II (Medium)
 Leetcode 707. Design Linked List (Medium)
-Leetcode 24. Swap Nodes in Pairs (Medium)
-Leetcode 61. Rotate List (Medium)
 Leetcode 82. Remove Duplicates from Sorted List II (Medium)
 Leetcode 86. Partition List (Medium)
 Leetcode 109. Convert Sorted List to Binary Search Tree (Medium)
@@ -474,10 +507,10 @@ Leetcode 328. Odd Even Linked List (Medium)
 Leetcode 369. Plus One Linked List (Medium)
 Leetcode 379. Design Phone Directory (Medium)
 Leetcode 426. Convert Binary Search Tree to Sorted Doubly Linked List (Medium)
-Leetcode 445. Add Two Numbers II (Medium)
 Leetcode 725. Split Linked List in Parts (Medium)
 Leetcode 708. Insert into a Cyclic Sorted List (Medium)
 Leetcode 817. Linked List Components (Medium)
+Leetcode 430. Flatten a Multilevel Doubly Linked List (Medium)
 Leetcode 1019. Next Greater Node In Linked List (Medium)
 Leetcode 23. Merge k Sorted Lists (Hard)
 Leetcode 25. Reverse Nodes in k-Group (Hard)
@@ -521,6 +554,7 @@ Leetcode 78. Subsets (Medium)
 Leetcode 89. Gray Code (Medium)
 Leetcode 137. Single Number II (Medium)
 Leetcode 371. Sum of Two Integers (Medium)
+Leetcode 201. Bitwise AND of Numbers Range(Medium)
 Leetcode 784. Letter Case Permutation (Medium)
 Leetcode 898. Bitwise ORs of Subarrays (Medium)
 -----------------------------------------------------
