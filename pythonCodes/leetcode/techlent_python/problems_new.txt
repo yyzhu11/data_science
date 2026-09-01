@@ -240,11 +240,15 @@ Leetcode 716. Max Stack
 Leetcode 232. Implement Queue using Stacks
 Leetcode 496. Next Greater Element I
 Leetcode 503. Next Greater Element II (Medium)
+Leetcode 1019. Next Greater Node In Linked List (Medium)
 Leetcode 739. Daily Temperatures (Medium)
 Leetcode 316. Remove Duplicate Letters (Medium)
 Leetcode 42. Trapping Rain Water (Hard)
 Leetcode 84. Largest Rectangle in Histogram (Hard)
 Leetcode 1544. Make The String Great
+Leetcode 1598. Crawler Log Folder
+    "The Leetcode file system keeps a log each time some user performs a change folder operation.
+Leetcode 1472. Design Browser History (Medium)
 Leetcode 71. Simplify Path (Medium)
 Leetcode 1047. Remove All Adjacent Duplicates In String
 Leetcode 1021. Remove Outermost Parentheses
@@ -260,8 +264,11 @@ Leetcode 1441. Build an Array With Stack Operations (Medium)
 Leetcode 150. Evaluate Reverse Polish Notation (Medium)
 Leetcode 402. Remove K Digits (Medium)
 Leetcode 394. Decode String (Medium)
+Leetcode 921. Minimum Add to Make Parentheses Valid (Medium)
 Leetcode 856. Score of Parentheses (Medium)
 Leetcode 678. Valid Parenthesis String (Medium)
+Leetcode 1190. Reverse Substrings Between Each Pair of Parentheses(Medium)
+Leetcode 1209. Remove All Adjacent Duplicates in String II (Medium)
 Leetcode 227. Basic Calculator II (Medium)
 Leetcode 907. Sum of Subarray Minimums (Medium)
 Leetcode 2390. Removing Stars From a String(Medium)
@@ -270,13 +277,31 @@ Leetcode 1717. Maximum Score From Removing Substrings(Medium)
 Leetcode 1653. Minimum Deletions to Make String Balanced (Medium)
 Leetcode 456. 132 Pattern (Medium)
 Leetcode 2345. Finding the Number of Visible Mountains
+Leetcode 1504. Count Submatrices With All Ones (Medium)
 Leetcode 895. Maximum Frequency Stack (Hard)
 Leetcode 2296. Design a Text Editor(Hard)
 Leetcode 85. Maximal Rectangle (Hard)
 Leetcode 224. Basic Calculator (Hard)
+Leetcode 622. Design Circular Queue (Medium)
+Leetcode 641. Design Circular Deque (Medium)
+Leetcode 1670. Design Front Middle Back Queue(Medium)
 Leetcode 225. Implement Stack using Queues
 Leetcode 933. Number of Recent Calls
+Leetcode 346. Moving Average from Data Stream
+Leetcode 1700. Number of Students Unable to Eat Lunch
+Leetcode 281. Zigzag Iterator(Medium)
+Leetcode 362. Design Hit Counter
+Leetcode 121. Best Time to Buy and Sell Stock
+Leetcode 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit (Medium)
+Leetcode 950. Reveal Cards In Increasing Order (Medium)
+Leetcode 2327. Number of People Aware of a Secret (Medium)
+Leetcode 918. Maximum Sum Circular Subarray (Medium)
+Leetcode 1687. Delivering Boxes from Storage to Ports (Hard)
+Leetcode 2532. Time to Cross a Bridge (Hard)
 Leetcode 239. Sliding Window Maximum (Hard)
+Leetcode 995. Minimum Number of K Consecutive Bit Flips (Hard)
+Leetcode 1425. Constrained Subsequence Sum (Hard)
+Leetcode 1499. Max Value of Equation (Hard)
 -----------------------------------------------------
 7_recursion_tree:
 Leetcode 1137. N-th Tribonacci Number
