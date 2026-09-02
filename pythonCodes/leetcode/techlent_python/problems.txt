@@ -449,6 +449,8 @@ Leetcode 152. Maximum Product Subarray (Medium)
 Leetcode 198. House Robber
 Leetcode 213. House Robber II
 Leetcode 338. Counting Bits
+Leetcode 956. Tallest Billboard (Hard)
+Leetcode 718. Maximum Length of Repeated Subarray (Medium)
 Leetcode 1143. Longest Common Subsequence
 Leetcode 392. Is Subsequence
 Leetcode 583. Delete Operation for Two Strings
@@ -456,8 +458,10 @@ Leetcode 72. Edit Distance (Medium)
 Leetcode 62. Unique Paths
 Leetcode 63. Unique Paths II (Medium)
 Leetcode 64. Minimum Path Sum (Medium)
+Leetcode 1289. Minimum Falling Path Sum II (Hard)
 Leetcode 42. Trapping Rain Water (Hard)
 Leetcode 91. Decode Ways (Medium)
+Leetcode 639. Decode Ways II (Hard)
 Leetcode 96. Unique Binary Search Trees (Medium)
 Leetcode 95. Unique Binary Search Trees II (Medium)
 Leetcode 97. Interleaving String (Medium)
@@ -471,6 +475,24 @@ Leetcode 343. Integer Break (Medium)
 Leetcode 1025. Divisor Game
 Leetcode 357. Count Numbers with Unique Digits (Medium)
 Leetcode 416. Partition Equal Subset Sum (Medium)
+Leetcode 537. Complex Number Multiplication (Medium)
+Leetcode 2008. Maximum Earnings From Taxi (Medium)
+Leetcode 2361. Minimum Costs Using the Train Line
+Leetcode 674. Longest Continuous Increasing Subsequence
+Leetcode 646. Maximum Length of Pair Chain (Medium)
+Leetcode 491. Non-decreasing Subsequences (Medium)
+Leetcode 1062. Longest Repeating Substring (Medium)
+Leetcode 2393. Count Strictly Increasing Subarrays (Medium)
+Leetcode 5. Longest Palindromic Substring (Medium)
+Leetcode 241. Different Ways to Add Parentheses (Medium)
+Leetcode 1575. Count All Possible Routes (Hard)
+Leetcode 2246. Longest Path With Different Adjacent Characters (Hard)
+Leetcode 2304. Minimum Path Cost in a Grid (Medium)
+Leetcode 2830. Maximize the Profit as the Salesman (Medium)
+Leetcode 2858. Minimum Edge Reversals So Every Node Is Reachable (Hard)
+Leetcode 265. Paint House II (Hard)
+Leetcode 174. Dungeon Game (Hard)
+Leetcode 329. Longest Increasing Path in a Matrix(Hard)
 Leetcode 132. Palindrome Partitioning II (Hard)
 Leetcode 85. Maximal Rectangle (Hard)
 Leetcode 87. Scramble String (Hard)
@@ -516,6 +538,18 @@ Leetcode 23. Merge k Sorted Lists (Hard)
 Leetcode 25. Reverse Nodes in k-Group (Hard)
 -----------------------------------------------------
 12_Greedy:
+Leetcode 455. Assign Cookies
+Leetcode 179. Largest Number (Medium)
+Leetcode 881. Boats to Save People (Medium)
+Leetcode 1196. How Many Apples Can You Put into the Basket
+Leetcode 1921. Eliminate Maximum Number of Monsters (Medium)
+Leetcode 2895. Minimum Processing Time (Medium)
+Leetcode 502. IPO (Hard)
+Leetcode 871. Minimum Number of Refueling Stops(Hard)
+Leetcode 300. Longest Increasing Subsequence (Medium)
+Leetcode 354. Russian Doll Envelopes (Hard)
+Leetcode 402. Remove K Digits (Medium)
+Leetcode 1199. Minimum Time to Build Blocks (Hard)
 Leetcode 605. Can Place Flowers
 Leetcode 942. DI String Match
 Leetcode 1029. Two City Scheduling (Medium)
@@ -524,11 +558,40 @@ Leetcode 3. Longest Substring Without Repeating Characters (Medium)
 Leetcode 55. Jump Game (Medium)
 Leetcode 45. Jump Game II (Medium)
 Leetcode 134. Gas Station (Medium)
-Leetcode 881. Boats to Save People (Medium)
 Leetcode 435. Non-overlapping Intervals (Medium)
 Leetcode 452. Minimum Number of Arrows to Burst Balloons (Medium)
 Leetcode 763. Partition Labels (Medium)
 Leetcode 135. Candy (Hard)
+Leetcode 56. Merge Intervals (Medium)
+Leetcode 1024. Video Stitching (Medium)
+Leetcode 1168. Optimize Water Distribution in a Village
+Leetcode 1584. Min Cost to Connect All Points (Medium)
+Leetcode 1102. Path With Maximum Minimum Value (Medium)
+Leetcode 1631. Path With Minimum Effort (Medium)
+Leetcode 787. Cheapest Flights Within K Stops (Medium)
+Leetcode 2093. Minimum Cost to Reach City With Discounts (Medium)
+Leetcode 986. Interval List Intersections(Medium)
+Leetcode 1055. Shortest Way to Form String
+Leetcode 228. Summary Ranges
+Leetcode 743. Network Delay Time (Medium)
+Leetcode 406. Queue Reconstruction by Height(Medium)
+Leetcode 1288. Remove Covered Intervals(Medium)
+Leetcode 1326. Minimum Number of Taps to Open to Water a Garden (Hard)
+Leetcode 1353. Maximum Number of Events That Can Be Attended(Medium)
+Leetcode 1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree (Hard)
+Leetcode 1541. Minimum Insertions to Balance a Parentheses String (Medium)
+Leetcode 1705. Maximum Number of Eaten Apples(Medium)
+Leetcode 1753. Maximum Score From Removing Stones (Medium)
+Leetcode 1833. Maximum Ice Cream Bars (Medium)
+Leetcode 1874. Minimize Product Sum of Two Arrays (Medium)
+Leetcode 2335. Minimum Amount of Time to Fill Cups
+Leetcode 2402. Meeting Rooms III (Hard)
+Leetcode 2406. Divide Intervals Into Minimum Number of Groups (Medium)
+Leetcode 1167. Minimum Cost to Connect Sticks
+Leetcode 2600. K Items With the Maximum Sum
+Leetcode 2642. Design Graph With Shortest Path Calculator(Hard)
+Leetcode 2655. Find Maximal Uncovered Ranges
+Leetcode 2697. Lexicographically Smallest Palindrome
 Leetcode 241. Different Ways to Add Parentheses (Medium)
 Leetcode 932. Beautiful Array (Medium)
 Leetcode 312. Burst Balloons (Hard)
