@@ -28,6 +28,8 @@ Leetcode 705. Design HashSet
 Leetcode 706. Design HashMap
 Leetcode 1429. First Unique Number
 Leetcode 676. Implement Magic Dictionary (Medium)
+Leetcode 355. Design Twitter (Medium)
+Leetcode 380. Insert Delete GetRandom O(1) (Medium)
 Leetcode 205. Isomorphic Strings
 Leetcode 771. Jewels and Stones
 Leetcode 804. Unique Morse Code Words
@@ -68,6 +70,8 @@ Leetcode 1399. Count Largest Group
 Leetcode 599. Minimum Index Sum of Two Lists
 Leetcode 49. Group Anagrams (Medium)
 Leetcode 249. Group Shifted Strings (Medium)
+Leetcode 855. Exam Room (Medium)
+Leetcode 846. Hand of Straights (Medium)
 -----------------------------------------------------
 2_array:
 Leetcode 303. Range Sum Query - Immutable
@@ -135,14 +139,20 @@ Leetcode 41. First Missing Positive (Hard)
 Leetcode 798. Smallest Rotation with Highest Score (Hard)
 -----------------------------------------------------
 3_string:
+Leetcode 520. Detect Capital
+Leetcode 657. Robot Return to Origin
+Leetcode 434. Number of Segments in a String
 Leetcode 242. Valid Anagram
 Leetcode 205. Isomorphic Strings
+Leetcode 541. Reverse String II
 Leetcode 227. Basic Calculator II (Medium)
 Leetcode 696. Count Binary Substrings
 Leetcode 28. Implement strstr(), Find the Index of the First Occurrence in a String
 Leetcode 58. Length of Last Word
 Leetcode 409. Longest Palindrome
 Leetcode 14. Longest Common Prefix
+Leetcode 387. First Unique Character in a String
+Leetcode 423. Reconstruct Original Digits from English (Medium)
 Leetcode 12. Integer to Roman (Medium)
 Leetcode 271. Encode and Decode Strings (Medium)
 Leetcode 8. String to Integer (atoi) (Medium)
@@ -152,6 +162,7 @@ Leetcode 5. Longest Palindromic Substring (Medium)
 Leetcode 159. Longest Substring with At Most Two Distinct Characters (Medium)
 Leetcode 151. Reverse Words in a String (Medium)
 Leetcode 186. Reverse Words in a String II (Medium)
+Leetcode 557. Reverse Words in a String III
 Leetcode 1003. Check If Word Is Valid After Substitutions (Medium)
 Leetcode 772. Basic Calculator III (Hard)
 Leetcode 65. Valid Number (Hard)
@@ -169,6 +180,7 @@ Leetcode 19. Remove Nth Node From End of List (Medium)
 Leetcode 202. Happy Number
 Leetcode 141. Linked List Cycle
 Leetcode 142. Linked List Cycle II (Medium)
+Leetcode 457. Circular Array Loop (Medium)
 Leetcode 509. Fibonacci Number
 Leetcode 198. House Robber (Medium)
 Leetcode 1. Two Sum
@@ -338,6 +350,9 @@ Leetcode 1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal
 Leetcode 950. Reveal Cards In Increasing Order (Medium)
 Leetcode 2327. Number of People Aware of a Secret (Medium)
 Leetcode 918. Maximum Sum Circular Subarray (Medium)
+Leetcode 703. Kth Largest Element in a Stream
+Leetcode 2462. Total Cost to Hire K Workers (Medium)
+Leetcode 2034. Stock Price Fluctuation (Medium)
 Leetcode 2534. Time Taken to Cross the Door (Hard)
 Leetcode 1687. Delivering Boxes from Storage to Ports (Hard)
 Leetcode 2532. Time to Cross a Bridge (Hard)
@@ -345,6 +360,7 @@ Leetcode 239. Sliding Window Maximum (Hard)
 Leetcode 995. Minimum Number of K Consecutive Bit Flips (Hard)
 Leetcode 1425. Constrained Subsequence Sum (Hard)
 Leetcode 1499. Max Value of Equation (Hard)
+Leetcode 1383. Maximum Performance of a Team (Hard)
 -----------------------------------------------------
 7_recursion_tree:
 Leetcode 1137. N-th Tribonacci Number
@@ -353,6 +369,8 @@ Leetcode 191. Number of 1 Bits
 Leetcode 231. Power of Two
 Leetcode 394. Decode String (Medium)
 Leetcode 439. Ternary Expression Parser (Medium)
+Leetcode 385. Mini Parser (Medium)
+Leetcode 341. Flatten Nested List Iterator (Medium)
 Leetcode 872. Leaf-Similar Trees
 Leetcode 2196. Create Binary Tree From Descriptions (Medium)
 Leetcode 919. Complete Binary Tree Inserter (Medium)
@@ -430,6 +448,7 @@ Leetcode 272. Closest Binary Search Tree Value II (Hard)
 Leetcode 538. Convert BST to Greater Tree (Medium)
 Leetcode 501. Find Mode in Binary Search Tree
 Leetcode 897. Increasing Order Search Tree
+Leetcode 1382. Balance a Binary Search Tree (Medium)
 Leetcode 145. Binary Tree Postorder Traversal
 Leetcode 563. Binary Tree Tilt
 Leetcode 2331. Evaluate Boolean Binary Tree
@@ -460,6 +479,9 @@ Leetcode 211. Design Add and Search Words Data Structure (Medium)
 Leetcode 449. Serialize and Deserialize BST (Medium)
 Leetcode 208. Implement Trie (Prefix Tree) (Medium)
 Leetcode 588. Design In-Memory File System
+Leetcode 695. Max Area of Island (Medium)
+Leetcode 547. Number of Provinces (Medium)
+Leetcode 934. Shortest Bridge (Medium)
 -----------------------------------------------------
 9_backtracking:
 Leetcode 17. Letter Combinations of a Phone Number (Medium)
@@ -515,19 +537,23 @@ Leetcode 714. Best Time to Buy and Sell Stock with Transaction Fee (Medium)
 Leetcode 3573. Best Time to Buy and Sell Stock V (Medium)
 Leetcode 3652. Best Time to Buy and Sell Stock using Strategy (Medium)
 Leetcode 53. Maximum Subarray
+Leetcode 300. Longest Increasing Subsequence (Medium)
+Leetcode 1143. Longest Common Subsequence
 Leetcode 152. Maximum Product Subarray (Medium)
 Leetcode 198. House Robber
 Leetcode 213. House Robber II
 Leetcode 338. Counting Bits
 Leetcode 956. Tallest Billboard (Hard)
 Leetcode 718. Maximum Length of Repeated Subarray (Medium)
-Leetcode 1143. Longest Common Subsequence
 Leetcode 392. Is Subsequence
 Leetcode 583. Delete Operation for Two Strings
 Leetcode 72. Edit Distance (Medium)
-Leetcode 62. Unique Paths
-Leetcode 63. Unique Paths II (Medium)
-Leetcode 64. Minimum Path Sum (Medium)
+Leetcode 650. 2 Keys Keyboard (Medium)
+Leetcode 10. Regular Expression Matching (Hard)
+Leetcode 115. Distinct Subsequences (Hard)
+Leetcode 416. Partition Equal Subset Sum (Medium)
+Leetcode 474. Ones and Zeroes (Medium)
+Leetcode 322. Coin Change (Medium)
 Leetcode 1289. Minimum Falling Path Sum II (Hard)
 Leetcode 42. Trapping Rain Water (Hard)
 Leetcode 91. Decode Ways (Medium)
@@ -535,16 +561,12 @@ Leetcode 639. Decode Ways II (Hard)
 Leetcode 96. Unique Binary Search Trees (Medium)
 Leetcode 95. Unique Binary Search Trees II (Medium)
 Leetcode 97. Interleaving String (Medium)
-Leetcode 120. Triangle (Medium)
 Leetcode 139. Word Break (Medium)
 Leetcode 140. Word Break II (Hard)
 Leetcode 279. Perfect Squares (Medium)
-Leetcode 300. Longest Increasing Subsequence (Medium)
-Leetcode 322. Coin Change (Medium)
 Leetcode 343. Integer Break (Medium)
 Leetcode 1025. Divisor Game
 Leetcode 357. Count Numbers with Unique Digits (Medium)
-Leetcode 416. Partition Equal Subset Sum (Medium)
 Leetcode 537. Complex Number Multiplication (Medium)
 Leetcode 2008. Maximum Earnings From Taxi (Medium)
 Leetcode 2361. Minimum Costs Using the Train Line
@@ -577,14 +599,21 @@ Leetcode 1575. Count All Possible Routes (Hard)
 Leetcode 2246. Longest Path With Different Adjacent Characters (Hard)
 Leetcode 2304. Minimum Path Cost in a Grid (Medium)
 Leetcode 2830. Maximize the Profit as the Salesman (Medium)
+Leetcode 413. Arithmetic Slices (Medium)
 Leetcode 2858. Minimum Edge Reversals So Every Node Is Reachable (Hard)
 Leetcode 265. Paint House II (Hard)
-Leetcode 174. Dungeon Game (Hard)
-Leetcode 329. Longest Increasing Path in a Matrix(Hard)
 Leetcode 132. Palindrome Partitioning II (Hard)
 Leetcode 85. Maximal Rectangle (Hard)
 Leetcode 87. Scramble String (Hard)
-Leetcode 115. Distinct Subsequences (Hard)
+Leetcode 62. Unique Paths
+Leetcode 63. Unique Paths II (Medium)
+Leetcode 64. Minimum Path Sum (Medium)
+Leetcode 542. 01 Matrix (Medium)
+Leetcode 221. Maximal Square (Medium)
+Leetcode 120. Triangle (Medium)
+Leetcode 576. Out of Boundary Paths (Medium)
+Leetcode 329. Longest Increasing Path in a Matrix(Hard)
+Leetcode 174. Dungeon Game (Hard)
 -----------------------------------------------------
 11_linked_list:
 Leetcode 237. Delete Node in a Linked List
@@ -716,6 +745,7 @@ Leetcode 371. Sum of Two Integers (Medium)
 Leetcode 201. Bitwise AND of Numbers Range(Medium)
 Leetcode 784. Letter Case Permutation (Medium)
 Leetcode 898. Bitwise ORs of Subarrays (Medium)
+Leetcode 476. Number Complement
 -----------------------------------------------------
 14_math:
 Leetcode 202. Happy Number
@@ -754,6 +784,7 @@ Leetcode 204. Count Primes (Medium)
 Leetcode 149. Max Points on a Line (Hard)
 Leetcode 384. Shuffle an Array (Medium)
 Leetcode 528. Random Pick with Weight (Medium)
+Leetcode 382. Linked List Random Node (Medium)
 Leetcode 470. Implement Rand10() Using Rand7() (Medium）
 Leetcode 65. Valid Number (Hard)
 Leetcode 252. Meeting Rooms
@@ -767,6 +798,7 @@ Leetcode 323. Number of Connected Components in an Undirected Graph (Medium)
 Leetcode 261. Graph Valid Tree (Medium)
 Leetcode 684. Redundant Connection (Medium)
 Leetcode 1135. Connecting Cities With Minimum Cost (Medium)
+Leetcode 990. Satisfiability of Equality Equations (Medium)
 Leetcode 207. Course Schedule (Medium)
 Leetcode 210. Course Schedule II (Medium)
 Leetcode 785. Is Graph Bipartite? (Medium)
@@ -793,3 +825,12 @@ Leetcode 315. Count of Smaller Numbers After Self (Hard)
 Leetcode 327. Count of Range Sum (Hard)
 Leetcode 308. Range Sum Query 2D - Mutable (Hard)
 Leetcode 699. Falling Squares (Hard)
+-----------------------------------------------------
+16_Design_Data_Structure:
+Leetcode 432. All O`one Data Structure (Hard)
+Leetcode 2353. Design a Food Rating System (Medium)
+Leetcode 1912. Design Movie Rental System (Hard)
+Leetcode 635. Design Log Storage System
+Leetcode 1756. Design Most Recently Used Queue
+Leetcode 2349. Design a Number Container System (Medium)
+Leetcode 1797. Design Authentication Manager (Medium)

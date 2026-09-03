@@ -115,3 +115,11 @@ cp problems_new.txt problems.txt
 echo '-----------------------------------------------------' >> problems.txt
 
 
+echo '16_Design_Data_Structure:' >>  problems.txt
+grep 'Leetcode' 16_Design_Data_Structure.ipynb >> problems.txt
+sed 's/    "# //g' problems.txt > problems_new.txt
+sed 's/    "## //g' problems_new.txt > problems.txt
+sed 's/\\n",//g' problems.txt > problems_new.txt
+cp problems_new.txt problems.txt
+echo '-----------------------------------------------------' >> problems.txt
+
